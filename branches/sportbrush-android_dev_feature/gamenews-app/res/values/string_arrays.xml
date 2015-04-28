@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="association_tabs">
+        <item>赛事广场</item>
+        <item>最强工会</item>
+        <item>精彩赛事</item>
+    </string-array>
+    
+     <string-array name="show_tabs">
+        <item>话题广场</item>
+        <item>风云榜</item>
+    </string-array>
+
+</resources>

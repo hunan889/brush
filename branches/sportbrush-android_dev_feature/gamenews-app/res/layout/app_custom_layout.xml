@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cust_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/cust_env_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/cust_env_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="测试"
+            android:textColor="@color/global_white" />
+
+        <RadioButton
+            android:id="@+id/cust_env_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="预发布"
+            android:textColor="@color/global_white" />
+
+        <RadioButton
+            android:id="@+id/cust_env_idc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="正式"
+            android:textColor="@color/global_white" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/cust_app_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/cust_app_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="体育"
+            android:textColor="@color/global_white" />
+
+        <RadioButton
+            android:id="@+id/cust_app_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="游戏"
+            android:textColor="@color/global_white" />
+
+        <RadioButton
+            android:id="@+id/cust_app_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="汽车"
+            android:textColor="@color/global_white" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg_dark"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/register_phone"
+        android:inputType="number"
+        android:maxLength="20"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="#323232"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/register_send"
+        android:textColor="@color/global_white"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:id="@+id/send_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/send_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:textColor="#bc4b14"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/sending"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/next_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/register_code"
+            android:inputType="number"
+            android:maxLength="20"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="#323232"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/register_password"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="#323232"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/register_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/register_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:textColor="#bc4b14"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/registering"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/register_ok"
+            android:textColor="@color/global_white"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="appkey">${app.key}</string>
+    <string name="channelname">${channel.name}</string>
+
+</resources>

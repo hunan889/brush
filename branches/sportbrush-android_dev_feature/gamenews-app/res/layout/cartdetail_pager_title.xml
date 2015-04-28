@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <RadioButton
+        android:id="@+id/radio_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="9.3dp"
+        android:layout_marginRight="9.3dp"
+        android:background="@drawable/news_title_bg_selector"
+        android:button="@null"
+        android:clickable="false"
+        android:textColor="@drawable/news_title_text_color_selector"
+        android:textSize="17sp" />
+
+</RelativeLayout>

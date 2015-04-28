@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.yy.android.gamenews.ui.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        gamenews:drawableLeft="@drawable/ic_person_default"
+        gamenews:isLeftImageRound="true"
+        gamenews:leftBorderColor="@color/global_white"
+        gamenews:title="@string/main_info_banner" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionbar" >
+
+        <com.yy.android.gamenews.ui.view.tab.FrameFragmentLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/welcome_channel_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/activity_main_welcome_channel_view" />
+
+    <ViewStub
+        android:id="@+id/welcome_pager_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/activity_main_pager" />
+
+</RelativeLayout>

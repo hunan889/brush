@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/show_list_item_selector"
+    android:orientation="vertical" >
+
+    <com.yy.android.gamenews.ui.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:background="@color/actionbar_bg"
+        app:drawableLeft="@drawable/actionbar_back_selector" />
+
+    <RelativeLayout
+        android:id="@+id/ll_take_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/show_list_item_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_take_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/take_picture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/iv_take_icon"
+            android:layout_toRightOf="@+id/iv_take_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/take_pic"
+            android:textColor="@color/global_lv_primary_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <View
+        style="@style/global_divider_2"
+        android:layout_height="0.5dp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_select_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/show_list_item_selector"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/iv_select_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/select_picture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/iv_select_icon"
+            android:layout_toRightOf="@+id/iv_select_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/select_pic"
+            android:textColor="@color/global_lv_primary_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <View
+        style="@style/global_divider_2"
+        android:layout_height="0.5dp" />
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/article_detail_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/custom_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.yy.android.gamenews.ui.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        gamenews:drawableLeft="@drawable/actionbar_back_selector"
+        gamenews:title="@string/article_detail"
+        gamenews:titleColor="@color/article_detail_actionbar_color"
+        gamenews:titleSize="13.33sp" />
+
+    <FrameLayout
+        android:id="@+id/body_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.yy.android.gamenews.ui.view.ExtendedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="@null" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/global_bg_light"
+                android:orientation="vertical" >
+
+                <com.yy.android.gamenews.ui.view.ExtendedWebView
+                    android:id="@+id/article_body"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/article_detail_comment_header"/>
+            </LinearLayout>
+        </com.yy.android.gamenews.ui.view.ExtendedScrollView>
+
+        <FrameLayout
+            android:id="@+id/progressbar_load_article"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/article_detail_loading_bg" >
+
+            <ImageView
+                android:id="@+id/progressbar_load_article_inner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/article_detail_loading" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/retry_article"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/reload_empty_img"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/global_reload" />
+
+            <TextView
+                android:id="@+id/reload_empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="13.33dp"
+                android:text="@string/global_empty_reload"
+                android:textColor="#ffa9a7a6"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.yy.android.gamenews.ui.view.ArticleCommentView
+        android:id="@+id/comment_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.yy.android.gamenews.ui.view.ArticleCommentView>
+
+</LinearLayout>

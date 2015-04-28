@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+
+	<path name="code_base">D:\svn\test</path>
+	<path name="backup_base">customize_sportbrush</path>
+
+	<config name="AndroidManifest">
+		<type>modify</type>
+		<path>\gamenews-app\AndroidManifest.xml</path>
+		<map>
+			<key>package="com.yy.android.gamenews"</key>
+			<value>package="com.yy.android.sportbrush"</value>
+		</map>
+		<map>
+			<key>android:scheme="tencent1101479253"</key>
+			<value>android:scheme="tencent1101502802"</value>
+		</map>
+		<map>
+			<key>android:value="84a449ec62d11b1d43198c6c9c86d132"</key>
+			<value>android:value="f4bd9d0f42af0006cf165f1fdb0bac07"</value>
+		</map>
+		<map>
+			<key>android:value="gamenews"</key>
+			<value>android:value="sportbrush"</value>
+		</map>
+		<!-- 信鸽推送id -->
+		<map>
+			<key>android:value="2100035419"</key>
+			<value>android:value="2100034572"</value>
+		</map>
+		<!-- 信鸽推送key -->
+		<map>
+			<key>android:value="A7E545EWQK2X"</key>
+			<value>android:value="AW7T5A64VT3Y"</value>
+		</map>
+	</config>
+
+	<config name="child_pom">
+	    <path>\*\pom.xml</path>
+		<type>modify</type>
+		<map>
+			<key>com.yy.android.gamenews</key>
+			<value>com.yy.android.sportbrush</value>
+		</map>
+		<map>
+			<key>gamenews-android-lib</key>
+			<value>sportbrush-android-lib</value>
+		</map>
+		<map>
+			<key>sportbrush-parent</key>
+			<value>gamenews-parent</value>
+		</map>
+		<map>
+			<key>&lt;artifactId&gt;sportbrush&lt;/artifactId&gt;</key>
+			<value>&lt;artifactId&gt;gamenews&lt;/artifactId&gt;</value>
+		</map>
+	</config>
+
+	<config name="layout">
+		<type>modify</type>
+		<path>\gamenews-app\res\layout\*</path>
+		<map>
+			<key>xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.gamenews"
+			</key>
+			<value>xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+			</value>
+		</map>
+	</config>
+
+	<config name="parent_pom">
+		<type>modify</type>
+		<path>\pom.xml</path>
+		<map>
+			<key>com.yy.android.gamenews</key>
+			<value>com.yy.android.sportbrush</value>
+		</map>
+		<map>
+			<key>gamenews-parent</key>
+			<value>sportbrush-parent</value>
+		</map>
+		<map>
+			<key>GAMENEWS-ANDROID</key>
+			<value>SPORTBRUSH-ANDROID</value>
+		</map>
+		<map>
+			<key>svn.yy.com/dwjs/code/jjww/android</key>
+			<value>svn.yy.com/dwjs/code/sportbrush/android</value>
+		</map>
+		<map>
+			<key>&lt;name&gt;gamenews&lt;/name&gt;</key>
+			<value>&lt;name&gt;sportbrush&lt;/name&gt;</value>
+		</map>
+	</config>
+
+	<config name="source">
+		<type>modify</type>
+		<path>\gamenews-app\src\*</path>
+		<map>
+			<key>import com.yy.android.gamenews.R;</key>
+			<value>import com.yy.android.sportbrush.R;</value>
+		</map>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\filters</path>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\src\main\java\com\yy\android\gamenews\Constants.java</path>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\res\values</path>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\res\drawable-hdpi</path>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\res\drawable-xhdpi</path>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\res\drawable-xxhdpi</path>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\res\drawable-mdpi</path>
+	</config>
+</configs>

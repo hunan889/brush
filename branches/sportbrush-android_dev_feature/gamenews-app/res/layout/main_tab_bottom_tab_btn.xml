@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/main_menu_bg_selector"
+    android:paddingBottom="@dimen/home_my_favor_padding_bottom"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/info_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:drawablePadding="1.33dp"
+        android:drawableTop="@drawable/main_my_info_btn_selector"
+        android:gravity="center"
+        android:text="@string/square"
+        android:textColor="@drawable/main_my_info_text_selector"
+        android:textSize="10dp" />
+
+</FrameLayout>

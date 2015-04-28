@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/article_list_banner_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/article_banner_bg"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/article_list_banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/article_list_banner_indicatior"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/global_white"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/article_list_banner_indicatior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/article_list_banner_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/global_white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/article_list_banner_sep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@color/global_white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/article_list_banner_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/global_white"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

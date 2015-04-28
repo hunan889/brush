@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+	<config>
+		<type>modify</type>
+		<path>\gamenews-app\src\main\java\com\yy\android\gamenews\Constants.java</path>
+		<!-- 微博 app key -->
+		<map>
+			<key>WEIBO_APP_KEY = "2872789820"</key>
+			<value>WEIBO_APP_KEY = "1687900450"</value>
+		</map>
+		<!-- QQ app id -->
+		<map>
+			<key>QQ_APP_ID = "1101502802"</key>
+			<value>QQ_APP_ID = "1101479253"</value>
+		</map>
+		<!-- QQ app key -->
+		<map>
+			<key>QQ_APP_KEY = "FE4EmndXTC0H2Wgs"</key>
+			<value>QQ_APP_KEY = "iP1lBkKhinJumyCj"</value>
+		</map>
+		<!-- 下载地址 -->
+		<map>
+			<key>DOWNLOAD_URL = "http://a.app.qq.com/o/simple.jsp?pkgname=com.yy.android.sportbrush"</key>
+			<value>DOWNLOAD_URL = "http://a.app.qq.com/o/simple.jsp?pkgname=com.yy.android.gamenews"</value>
+		</map>
+		<!-- 微信 app key -->
+		<map>
+			<key>WEIXIN_APP_KEY = "wxcd4e8e4f32e4c1e2"</key>
+			<value>WEIXIN_APP_KEY = "wx0fb5d62df163ca86"</value>
+		</map>
+		<!-- 活动地址 -->
+		<map>
+			<key>MY_EVENT_URL = "http://shua.duowan.com/sport/index.php?m=active"</key>
+			<value>MY_EVENT_URL = "http://shua.duowan.com/game/index.php?m=active"</value>
+		</map>
+		<!-- 文章 url 地址 -->
+		<map>
+			<key>ARTICLE_URL_FORMATTER = "http://shua.duowan.com/sport/index.php?m=share&amp;id=%d"</key>
+			<value>ARTICLE_URL_FORMATTER = "http://shua.duowan.com/game/index.php?m=share&amp;id=%d"</value>
+		</map>
+		<!-- Servant name -->
+		<map>
+			<key>APP_SERVANT_NAME = "sportnews"</key>
+			<value>APP_SERVANT_NAME = "gamenews"</value>
+		</map>
+		<!-- App type -->
+		<map>
+			<key>ECOMM_APP_TYPE = ECommAppType._Comm_APP_SPORTBRUSH</key>
+			<value>ECOMM_APP_TYPE = ECommAppType._Comm_APP_GAMENEWS</value>
+		</map>
+		<!-- App type -->
+		<map>
+			<key>TITLE_RECMD = "刷子"</key>
+			<value>TITLE_RECMD = "头条"</value>
+		</map>
+	</config>
+	<config name="AndroidManifest">
+		<type>modify</type>
+		<path>\gamenews-app\AndroidManifest.xml</path>
+		<map>
+			<key>package="com.yy.android.sportbrush"</key>
+			<value>package="com.yy.android.gamenews"</value>
+		</map>
+		<map>
+			<key>android:value="sportbrush"</key>
+			<value>android:value="gamenews"</value>
+		</map>
+		<!-- QQ社会化分享id -->
+		<map>
+			<key>android:scheme="tencent1101502802"</key>
+			<value>android:scheme="tencent1101479253"</value>
+		</map>
+		<!-- Hiido App id -->
+		<map>
+			<key>android:value="f4bd9d0f42af0006cf165f1fdb0bac07"</key>
+			<value>android:value="84a449ec62d11b1d43198c6c9c86d132"</value>
+		</map>
+		<!-- 信鸽推送id -->
+		<map>
+			<key>android:value="2100034572"</key>
+			<value>android:value="2100035419"</value>
+		</map>
+		<!-- 信鸽推送key -->
+		<map>
+			<key>android:value="AW7T5A64VT3Y"</key>
+			<value>android:value="A7E545EWQK2X"</value>
+		</map>
+		<!-- MTA Key -->
+		<map>
+			<key>android:value="A8AZ3ES25SRX"</key>
+			<value>android:value="Aqc1101479253"</value>
+		</map>
+		
+		
+	</config>
+	
+	<config>
+	    <type>modify</type>
+	    <path>\gamenews-app\res\values\statinfo.xml</path>
+		<!-- 友盟 app Key -->
+		<map>
+			<key>539517b756240b31ad1256e7</key>
+			<value>5375e6be56240b3f6d03870c</value>
+		</map>
+	</config>
+
+	<config name="child_pom">
+	    <path>\*\pom.xml</path>
+		<type>modify</type>
+		<map>
+			<key>com.yy.android.sportbrush</key>
+			<value>com.yy.android.gamenews</value>
+		</map>
+		<map>
+			<key>sportbrush-android-lib</key>
+			<value>gamenews-android-lib</value>
+		</map>
+		<map>
+			<key>sportbrush-parent</key>
+			<value>gamenews-parent</value>
+		</map>
+		<map>
+			<key>&lt;artifactId&gt;sportbrush&lt;/artifactId&gt;</key>
+			<value>&lt;artifactId&gt;gamenews&lt;/artifactId&gt;</value>
+		</map>
+		
+	</config>
+
+	<config name="layout">
+		<type>modify</type>
+		<path>\gamenews-app\res\layout\*</path>
+		<map>
+			<key>xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+			</key>
+			<value>
+				xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.gamenews"
+			</value>
+		</map>
+	</config>
+
+	<config name="parent_pom">
+		<type>modify</type>
+		<path>\pom.xml</path>
+		<map>
+			<key>com.yy.android.sportbrush</key>
+			<value>com.yy.android.gamenews</value>
+		</map>
+		<map>
+			<key>sportbrush-parent</key>
+			<value>gamenews-parent</value>
+		</map>
+		<map>
+			<key>SPORTBRUSH-ANDROID</key>
+			<value>GAMENEWS-ANDROID</value>
+		</map>
+		<map>
+			<key>svn.yy.com/dwjs/code/sportbrush/android</key>
+			<value>svn.yy.com/dwjs/code/jjww/android</value>
+		</map>
+		<map>
+			<key>&lt;name&gt;sportbrush&lt;/name&gt;</key>
+			<value>&lt;name&gt;gamenews&lt;/name&gt;</value>
+		</map>
+	</config>
+
+	<config name="source">
+		<type>modify</type>
+		<path>\gamenews-app\src\*</path>
+		<map>
+			<key>import com.yy.android.sportbrush.R</key>
+			<value>import com.yy.android.gamenews.R</value>
+		</map>
+	</config>
+	
+	<config>
+	    <type>modify</type>
+	    <path>\gamenews-app\res\values\strings.xml</path>
+		<map>
+			<key>体育刷子</key>
+			<value>游戏刷子</value>
+		</map>
+		<map>
+			<key>聚合门户体育头条，赛事表，深度专题，智能推荐，订制个性频道…你的喜好，我最懂！</key>
+			<value>您的专属游戏管家！刀塔传奇、天天酷跑等热门游戏深度攻略，资讯视频，礼包美女…</value>
+		</map>
+		<map>
+			<key>头条</key>
+			<value>广场</value>
+		</map>
+		<map>
+			<key>头条</key>
+			<value>广场</value>
+		</map>
+	</config>
+	
+	<config>
+	    <type>modify</type>
+	    <path>\gamenews-app\res\values\dimens.xml</path>
+		<map>
+			<key>&lt;dimen name="welcome_logo_height"&gt;157dp&lt;/dimen&gt;</key>
+			<value>&lt;dimen name="welcome_logo_height"&gt;166dp&lt;/dimen&gt;</value>
+		</map>
+		<map>
+			<key>&lt;dimen name="welcome_logo_width"&gt;228dp&lt;/dimen&gt;</key>
+			<value>&lt;dimen name="welcome_logo_width"&gt;185dp&lt;/dimen&gt;</value>
+		</map>
+	</config>
+	
+	<config>
+	    <type>modify</type>
+	    <path>\gamenews-app\res\values\drawable.xml</path>
+		<map>
+			<key>@drawable/welcome_bg</key>
+			<value>@color/actionbar_bg</value>
+		</map>
+	</config>
+	
+	<config>
+	    <type>modify</type>
+	    <path>\gamenews-app\res\values\dimens.xml</path>
+		<map>
+			<key>157dp</key>
+			<value>166dp</value>
+		</map>
+		<map>
+			<key>228dp</key>
+			<value>185dp</value>
+		</map>
+	</config>
+	
+	<config>
+	    <type>modify</type>
+	    <path>\gamenews-app\res\values-hdpi\dimens.xml</path>
+		<map>
+			<key>157dp</key>
+			<value>166dp</value>
+		</map>
+		<map>
+			<key>228dp</key>
+			<value>185dp</value>
+		</map>
+	</config>
+	
+	<config>
+	    <type>modify</type>
+	    <path>\gamenews-app\res\values-xhdpi\dimens.xml</path>
+		<map>
+			<key>157dp</key>
+			<value>166dp</value>
+		</map>
+		<map>
+			<key>228dp</key>
+			<value>185dp</value>
+		</map>
+	</config>
+	
+	<config>
+	    <type>modify</type>
+	    <path>\gamenews-app\res\values-xxhdpi\dimens.xml</path>
+		<map>
+			<key>157dp</key>
+			<value>166dp</value>
+		</map>
+		<map>
+			<key>228dp</key>
+			<value>185dp</value>
+		</map>
+	</config>
+	
+	<config>
+		<type>modify</type>
+		<path>\gamenews-app\filters\*</path>
+		<map>
+			<key>539517b756240b31ad1256e7</key>
+			<value>5375e6be56240b3f6d03870c</value>
+		</map>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\assets\welcome_channel.txt</path>
+	</config>
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\assets\image_bg_failed.png</path>
+	</config>
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\assets\image_bg_loading.png</path>
+	</config>
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\assets\channel</path>
+	</config>
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\res\values\colors.xml</path>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\res\drawable-hdpi</path>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\res\drawable-xhdpi</path>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\res\drawable-xxhdpi</path>
+	</config>
+	
+	<config>
+		<type>replace</type>
+		<path>\gamenews-app\res\drawable-mdpi</path>
+	</config>
+</configs>

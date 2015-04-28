@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp" >
+
+    <ImageView
+        android:id="@+id/cartdetail_summary_img"
+        android:layout_width="126dp"
+        android:layout_height="105dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/article_list_item_loading_big"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/cartdetail_summary_img"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cartdetail_car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:layout_gravity="top"
+            android:singleLine="true"
+            android:text="宝马X5"
+            android:textColor="@color/cartdetail_summary_list_text"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cartdetail_car_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="级别：大中型SUV"
+            android:textColor="@color/cartdetail_param_title_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/cartdetail_car_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="官方价：80万"
+            android:textColor="@color/cartdetail_param_title_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        style="@style/global_divider_2"
+        android:layout_below="@id/cartdetail_summary_img"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

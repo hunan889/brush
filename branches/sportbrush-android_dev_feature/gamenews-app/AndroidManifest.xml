@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yy.android.sportbrush"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.yy.android.gamenews.GameNewsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yy.android.gamenews.ui.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yy.android.gamenews.ui.LoginYYActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.udbsdk.Login_Activity"
+            android:theme="@android:style/Theme.NoDisplay" />
+        <!--
+             <activity
+            android:name="com.yy.udbsdk.Reg_Activity"
+            android:theme="@android:style/Theme.NoDisplay" />
+        -->
+        <activity
+            android:name="com.yy.android.gamenews.ui.MyHomeActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.WelcomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yy.android.gamenews.ui.SpecialArticleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.ChannelDepotActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.ChannelsMoreActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.ChannelSearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.MyFavorListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.ArticleListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.schetable.AlarmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.yy.android.gamenews.alarm_dialog" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yy.android.gamenews.plugin.schetable.AlarmListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.ArticleDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:parentActivityName="com.yy.android.gamenews.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yy.android.gamenews.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.yy.android.gamenews.ui.ImageZoomDetailViewerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:parentActivityName="com.yy.android.gamenews.ui.ArticleDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yy.android.gamenews.ui.ArticleDetailActivity" />
+        </activity>
+        <activity
+            android:name="com.yy.android.gamenews.ui.VideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.ArticleGalleryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.cartport.SingleFragmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.CommentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.show.TopicDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.show.TopicDetailCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.show.TopicListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.show.TagListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.show.SelectPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.show.SubmitTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.cartport.CartportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.cartport.CartDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.cartport.CartDetailImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.schetable.GameListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.schetable.TeamMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yy.android.gamenews.ui.CommentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:parentActivityName="com.yy.android.gamenews.ui.ArticleDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yy.android.gamenews.ui.ArticleDetailActivity" />
+        </activity>
+        <activity
+            android:name="com.yy.android.gamenews.ui.AppWebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:parentActivityName="com.yy.android.gamenews.ui.ArticleDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yy.android.gamenews.ui.ArticleDetailActivity" />
+        </activity>
+        <activity
+            android:name="com.yy.android.gamenews.ui.AppWebFragmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.yy.android.gamenews.ui.ViewPagerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.yy.android.gamenews.ui.FeedbackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.cartport.BrandDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.gamerace.UnionInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.gamerace.PersonalRaceTopicActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.gamerace.UnionRaceTopicActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.message.MessageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.yy.android.gamenews.plugin.distribution.DistributionListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <receiver
+            android:name="com.yy.android.gamenews.receiver.DistributeReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="com.yy.android.gamenews.action.app_sync_status" />
+                <action android:name="com.yy.android.gamenews.action.app_downloaded" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.yy.android.gamenews.service.DistributeSyncService"
+            android:exported="false" />
+        <service
+            android:name="com.yy.android.gamenews.service.FileDownloadService"
+            android:exported="false"
+            android:process=":dlservice" />
+        <!-- 拦截系统广播 -->
+        <receiver android:name="com.yy.android.gamenews.receiver.NetworkReceiver" >
+            <intent-filter>
+
+                <!-- 网络状态 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 腾讯云统计 -->
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="A8AZ3ES25SRX" />
+        <meta-data
+            android:name="InstallChannel"
+            android:value="@string/channelname" />
+        <!-- 腾讯云统计 -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1101502802" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.plus.ImageActivity" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- ###################添加UmengAppkey###################### -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="@string/appkey" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="@string/channelname" >
+        </meta-data>
+        <!-- ###################添加UmengAppkey###################### -->
+        <!-- ###################海度云统计###################### -->
+        <meta-data
+            android:name="HIIDO_APPKEY"
+            android:value="f4bd9d0f42af0006cf165f1fdb0bac07" />
+        <meta-data
+            android:name="HIIDO_APPID"
+            android:value="sportbrush" />
+        <meta-data
+            android:name="HIIDO_FROM"
+            android:value="@string/channelname" />
+        <!-- ###################海度云统计###################### -->
+        <!-- ###################信鸽推送###################### -->
+        <!-- APP实现的Receiver，用于接收消息和结果反馈 -->
+        <!-- com.tencent.android.xgpushdemo.CustomPushReceiver需要改为自己的Receiver -->
+        <receiver android:name="com.yy.android.gamenews.receiver.CustomPushReceiver" >
+            <intent-filter>
+
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2" >
+            <intent-filter android:priority="0x7fffffff" >
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <!-- 【可选】 usb相关的系统广播，增强信鸽service的复活机会，请根据需要添加 -->
+            <intent-filter android:priority="0x7fffffff" >
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <activity android:name="com.tencent.android.tpush.XGPushActivity" >
+            <intent-filter>
+                <action android:name="" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100034572" />
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="AW7T5A64VT3Y" />
+        <!-- ###################信鸽推送###################### -->
+
+        <receiver android:name="com.yy.android.gamenews.receiver.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.yy.android.gamenews.service.UpdateService" />
+        <service android:name="com.yy.android.gamenews.service.UpgradeService" />
+        <!-- push结束 -->
+    </application>
+
+</manifest>

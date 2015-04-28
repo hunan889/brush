@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/show_head_toast_bg"
+    android:gravity="center"
+    android:maxWidth="70dip"
+    android:minWidth="70dip"
+    android:padding="10dip"
+    android:textColor="@color/white"
+    android:textSize="50sp" />

@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.yy.android.gamenews.ui.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        gamenews:drawableLeft="@drawable/actionbar_back_selector"
+        gamenews:drawableRight="@drawable/actionbar_subscribe_selector"
+        gamenews:title="@string/my_favor_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/article_list_radio"
+            android:layout_width="match_parent"
+            android:layout_height="74.66dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|bottom"
+            android:visibility="gone"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/brush_btn"
+                    android:layout_width="74.66dp"
+                    android:layout_height="74.66dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/article_list_brush_but_selector" />
+
+                <ImageView
+                    android:id="@+id/main_radio_center_indicator"
+                    android:layout_width="74.66dp"
+                    android:layout_height="74.66dp"
+                    android:layout_gravity="center_horizontal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.yy.android.gamenews.ui.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        gamenews:leftText="@string/global_cancel"
+        gamenews:rightText="@string/global_send"
+        gamenews:title="@string/feedback" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="9.33dp"
+        android:background="@drawable/comment_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/posts_editor"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:layout_margin="4dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/feedback_hint"
+            android:lineSpacingExtra="3.33dp"
+            android:textColor="@color/article_detail_comment_primary_text"
+            android:textSize="14.67sp" >
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/words_num"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="300"
+            android:textColor="#aaaaaa"
+            android:textSize="12dp" />
+    </FrameLayout>
+
+</LinearLayout>

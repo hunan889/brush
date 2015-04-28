@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/show_topic_detail_head_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/ic_person_default_dark" />
+
+            <ImageView
+                android:id="@+id/user_logo_frame"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/big_avatar_bg" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/show_topic_detail_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:text="titletitletitle"
+            android:textColor="@color/global_lv_primary_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/show_topic_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:text="timetimetimetime"
+            android:textColor="@color/global_text_info_color"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/show_topic_detail_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47dp"
+        android:text="标签"
+        android:textColor="@color/global_label_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/show_topic_detail_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="内容内容内容内容"
+        android:textColor="@color/global_text_color"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:id="@+id/show_topic_detail_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/article_list_item_loading_big"
+            android:scaleType="centerCrop"
+            gamenews:adjustType="auto_adjust_scale_height"
+            gamenews:scaleRate="1.78" />
+    </FrameLayout>
+
+    <View style="@style/global_divider_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/show_topic_detail_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_show_topic_detail_comment_selector"
+            android:text="评论" />
+
+        <View
+            style="@style/global_divider_vertical"
+            android:layout_marginBottom="6.5dp"
+            android:layout_marginTop="6.5dp" />
+
+        <ImageButton
+            android:id="@+id/show_topic_detail_up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_show_topic_detail_like_selector"
+            android:text="赞" />
+
+        <View
+            style="@style/global_divider_vertical"
+            android:layout_marginBottom="6.5dp"
+            android:layout_marginTop="6.5dp" />
+
+        <ImageButton
+            android:id="@+id/show_topic_detail_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_show_topic_detail_share_selector"
+            android:text="更多" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/show_detail_bg" />
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:id="@+id/actionbar_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:background="@color/actionbar_bg"
+    android:paddingLeft="@dimen/actionbar_padding"
+    android:paddingRight="@dimen/actionbar_padding" >
+
+    <FrameLayout
+        android:id="@+id/left_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:minWidth="@dimen/actionbar_height" >
+
+        <ImageView
+            android:id="@+id/actionbar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_gravity="center|start"
+            android:gravity="center|start" >
+
+            <com.yy.android.gamenews.ui.view.RoundImageView
+                android:id="@+id/actionbar_left_round"
+                android:layout_width="@dimen/actionbar_img_height"
+                android:layout_height="@dimen/actionbar_img_height"
+                android:layout_gravity="start|center"
+                android:visibility="visible"
+                gamenews:border_outside_color="@color/global_white"
+                gamenews:border_outside_thickness="2dp" />
+
+            <TextView
+                android:id="@+id/message_counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/actionbar_left_round"
+                android:layout_alignRight="@+id/actionbar_left_round"
+                android:layout_alignTop="@+id/actionbar_left_round"
+                android:layout_marginEnd="-7dip"
+                android:layout_marginRight="-7dip"
+                android:layout_marginTop="-5dip"
+                android:background="@drawable/comment_count_white"
+                android:gravity="center"
+                android:minWidth="18dp"
+                android:paddingEnd="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingStart="2dp"
+                android:text="99"
+                android:textColor="@color/global_head_photo_color"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/message_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/actionbar_left_round"
+                android:layout_alignRight="@+id/actionbar_left_round"
+                android:layout_alignTop="@+id/actionbar_left_round"
+                android:layout_marginEnd="-7dip"
+                android:layout_marginRight="-7dip"
+                android:layout_marginTop="-5dip"
+                android:gravity="center"
+                android:minWidth="18dp"
+                android:paddingEnd="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingStart="2dp"
+                android:src="@drawable/ic_message_hint_1"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/actionbar_left_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="left"
+            android:textColor="@color/actionbar_text"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/actionbar_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/right_customize"
+        android:layout_toRightOf="@id/left_container" >
+
+        <TextView
+            android:id="@+id/actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/actionbar_text"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/actionbar_title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/actionbar_title"
+            android:src="@drawable/article_detail_loading_bold" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/right_customize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/right_container"
+        android:layout_toStartOf="@+id/right_container"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@id/right_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:minWidth="@dimen/actionbar_height" >
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:id="@+id/actionbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_img_height"
+            android:layout_gravity="center"
+            gamenews:adjustType="auto_adjust_width" />
+
+        <com.yy.android.gamenews.ui.view.RoundImageView
+            android:id="@+id/actionbar_right_round"
+            android:layout_width="@dimen/actionbar_img_height"
+            android:layout_height="@dimen/actionbar_img_height"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            gamenews:border_outside_color="@color/global_white"
+            gamenews:border_outside_thickness="2dp" />
+
+        <TextView
+            android:id="@+id/actionbar_right_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="right"
+            android:textColor="@color/actionbar_text"
+            android:textSize="17sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 字体大小 -->
+     <dimen name="font_size_48xp">25sp</dimen>
+     <dimen name="font_size_42xp">19sp</dimen>
+     <dimen name="font_size_40xp">18sp</dimen>
+     <dimen name="font_size_36xp">18sp</dimen>
+     <dimen name="font_size_34xp">17sp</dimen>
+   	 <dimen name="font_size_32xp">16sp</dimen>
+     <dimen name="font_size_30xp">15.5sp</dimen>
+     <dimen name="font_size_28xp">15sp</dimen>
+     <dimen name="font_size_26xp">14sp</dimen>
+     <dimen name="font_size_24xp">13sp</dimen>
+    
+     <dimen name="margin_size_1xp">0.38dp</dimen>
+     <dimen name="margin_size_2xp">0.76dp</dimen>
+     <dimen name="margin_size_5xp">1.9dp</dimen>
+     <dimen name="margin_size_10xp">3.8dp</dimen>
+     <dimen name="margin_size_12xp">4.6dp</dimen>
+     <dimen name="margin_size_15xp">5.7dp</dimen>
+     <dimen name="margin_size_20xp">7.6dp</dimen>
+     <dimen name="margin_size_25xp">9.5dp</dimen>
+     <dimen name="margin_size_30xp">11.4dp</dimen>
+     <dimen name="margin_size_35xp">13.3dp</dimen>
+     <dimen name="margin_size_40xp">15.2dp</dimen>
+     <dimen name="margin_size_45xp">17.1dp</dimen>
+     <dimen name="margin_size_50xp">19dp</dimen>
+     <dimen name="margin_size_55xp">20.9dp</dimen>
+     <dimen name="margin_size_56xp">21.3dp</dimen>
+     <dimen name="margin_size_60xp">22.8dp</dimen>
+     <dimen name="margin_size_70xp">26.6dp</dimen>
+     <dimen name="margin_size_76xp">25.8dp</dimen>
+     <dimen name="margin_size_80xp">30.4dp</dimen>
+     <dimen name="margin_size_85xp">32.3dp</dimen>
+     <dimen name="margin_size_88xp">33.4dp</dimen>
+     <dimen name="margin_size_90xp">34.2dp</dimen>
+     <dimen name="margin_size_100xp">38dp</dimen>
+     <dimen name="margin_size_110xp">41.8dp</dimen>
+     <dimen name="margin_size_115xp">43.7dp</dimen>
+     <dimen name="margin_size_120xp">45.6dp</dimen>
+     <dimen name="margin_size_130xp">49.4dp</dimen>
+     <dimen name="margin_size_140xp">53.2dp</dimen>
+     <dimen name="margin_size_153xp">58.1dp</dimen>
+     
+     <dimen name="margin_size_160xp">60.8dp</dimen>
+     <dimen name="margin_size_180xp">68.4dp</dimen>
+     <dimen name="margin_size_200xp">86dp</dimen>
+     <dimen name="margin_size_220xp">83.6dp</dimen>
+     <dimen name="margin_size_250xp">95dp</dimen>
+     <dimen name="margin_size_320xp">120dp</dimen>
+    
+</resources>

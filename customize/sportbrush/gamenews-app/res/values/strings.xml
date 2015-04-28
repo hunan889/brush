@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 常用 -->
+    <string name="app_name">体育刷子</string>
+    <string name="global_ok">确定</string>
+    <string name="global_cancel">取消</string>
+    <string name="global_send">发送</string>
+    <string name="global_caption">提示</string>
+    <string name="global_list_pull">下拉刷新</string>
+    <string name="global_list_loading">正在载入中...</string>
+    <string name="global_list_refreshing">刷新中...</string>
+    <string name="global_list_no_more">暂时没有更多内容，休息一会儿吧</string>
+    <string name="global_list_release">释放立即刷新</string>
+    <string name="global_list_last_get">上次刷新%s</string>
+    <string name="global_loading">加载中</string>
+    <string name="global_network_error">无法连接到服务器，请检查您的网络连接</string>
+    <string name="global_my_default_name">我</string>
+    <string name="global_retry">加载失败，点击重试...</string>
+    <string name="global_empty_reload">点击重新加载</string>
+    <string name="global_empty_no_data">还没有数据，赶紧去刷一下吧</string>
+    <string name="global_update_count">为您推荐了%d篇新文章</string>
+    <string name="global_update_count_zero">暂时没有更新的文章</string>
+    <string name="global_downloading">下载中...</string>
+    <string name="global_downloaded">下载完成</string>
+    <string name="global_download_failed">下载失败</string>
+    <string name="upgrade_start">开始下载</string>
+    <string name="global_no_update">您已经是最新版本</string>
+    <string name="http_error">网络请求异常，请稍后再试</string>
+    <string name="http_not_connected">当前网络不给力,请检查网络</string>
+
+    <!-- 专题详情 -->
+    <string name="special_desc">摘要</string>
+    <string name="special_title">专题</string>
+
+    <!-- 首页 -->
+    <string name="main_add_fav">轻触屏幕添加我喜欢的频道</string>
+    <string name="main_news">我的最爱</string>
+    <string name="main_brush">我的刷子</string>
+    <string name="main_me">个人中心</string>
+    <string name="main_info_banner">体育刷子</string>
+    <string name="square">广场</string>
+    <string name="mine">我的</string>
+    <string name="news_plus">+</string>
+    <string name="comment">评论</string>
+    <string name="my_favor">收藏</string>
+    <string name="login_prompt">登录后将给你推荐更多感兴趣的内容</string>
+    <string name="main_exit_app">再按一次退出APP</string>
+    <string name="tips_new_info">这里有最新资讯</string>
+    <string name="tips_brush">这里可以刷出新鲜资讯</string>
+    <string name="tips_mine">这里是你的私人订制</string>
+    <string name="tips_subscribe">丰富的内容自己搞定</string>
+
+    <!-- 个人中心 -->
+    <string name="my_log_out">退出登录</string>
+    <string name="my_event">精彩活动，好礼相送 >></string>
+    <string name="my_event_secondary">YY用户专享</string>
+    <string name="my_only_wifi">仅在wifi下自动加载图片</string>
+    <string name="my_clear_cache">清除缓存</string>
+    <string name="my_allow_push">推送通知</string>
+    <string name="my_check_update">检查更新</string>
+    <string name="my_feedback">意见反馈</string>
+    <string name="my_favor_title">我的收藏</string>
+    <string name="feedback_empty_hint">请填写反馈意见</string>
+    <string name="feedback_hint">请填写反馈意见</string>
+    <string name="feedback_success">感谢您的意见</string>
+    <string name="feedback_failed">意见反馈异常</string>
+    <string name="feedback">意见反馈</string>
+    <string name="my_msg_confim_logout">确定要退出登录吗？</string>
+    <string name="my_msg_logout_fail">网络错误，请重试</string>
+    <string name="my_msg_login_fail">登录失败</string>
+    <string name="my_msg_login_timeout">登录超时</string>
+    <string name="my_msg_login_succ">登录成功</string>
+    <string name="my_msg_login_no_name">请输入用户名</string>
+    <string name="my_msg_login_no_pswd">请输入密码</string>
+    <string name="my_msg_login_wrong_pwd">用户名或密码错误</string>
+    <string name="my_msg_login_server_error">无法连接到服务器</string>
+    <string name="my_msg_confim_clean">确定要清除缓存吗？</string>
+    <string name="my_msg_clean_succ">缓存清除成功</string>
+    <string name="my_register_wait">%d秒后可重新发送</string>
+    <string name="my_register_error_length">手机号码为11位数字</string>
+    <string name="my_register_code_sent">验证码已发送，请查收！</string>
+    <string name="my_register_error_registered">该手机号已用过</string>
+    <string name="my_register_send_fail">发送失败，错误码：%d</string>
+    <string name="my_register_error_verifier_empty">输入收到的验证码</string>
+    <string name="my_register_success">注册成功，正在登录</string>
+    <string name="my_register_error_verifier">验证码错误</string>
+    <string name="my_register_fail">注册失败，错误码：%d</string>
+    <string name="register_phone">本机号码</string>
+    <string name="register_ok">注册</string>
+    <string name="register_password">设置6&#8211;20位登录密码</string>
+    <string name="register_send">发送短信验证码</string>
+    <string name="register_code">验证码</string>
+    <string name="clean_cacheing">清除中...</string>
+
+    <!-- 频道仓库 -->
+    <string name="channel">频道</string>
+    <string name="channel_depot">频道仓库</string>
+    <string name="channel_manage_tips">长按可编辑排序</string>
+    <string name="channel_manage_empty_tips">请从下方选择您想要关注的频道</string>
+    <string name="channel_my_favourite">我喜欢的频道</string>
+    <string name="channel_more">更多</string>
+    <string name="channel_complete">完成</string>
+    <string name="channel_more_action">再给我来点</string>
+    <string name="channel_manage_error">编辑完了之后再添加哦</string>
+    <string name="channel_manage_too_fast">点的太快了，慢点吧</string>
+    <string name="channel_manage_too_mandy0">同学，你确定要看这么多频道吗</string>
+    <string name="channel_manage_too_mandy1">已经有二十个频道了耶</string>
+    <string name="channel_manage_too_mandy2">sorry 目前暂支持20频道上限</string>
+    <string name="channel_manage_too_mandy3">频道已满啦，先去编辑一下吧</string>
+    <string name="channel_guess_you_like">猜你喜欢</string>
+    <string name="channel_search_hint">请输入搜索内容</string>
+    <string name="channel_search_no_results_hint">要不,换个词呀...</string>
+    <string name="channel_no_more">已无更多推荐</string>
+    <string name="channel_no_keyword_tips">请输入有效搜索内容</string>
+    <string name="channel_add_success">已成功订阅此频道</string>
+
+    <!-- 详情页 -->
+    <string name="article_detail">新闻</string>
+    <string name="download_not_ready">图片还没加载完毕，请稍后</string>
+    <string name="download_success">已保存到%1$s</string>
+    <string name="article_detail_load_failed">加载文章失败</string>
+    <string name="download_failed">图片加载失败，请检查网络状况后重试</string>
+    <string name="comment_user_default_name">多玩神秘玩家</string>
+    <string name="comment_hint">请文明发言，遵守"七条底线"</string>
+    <string name="comment_empty_hint">请输入评论内容</string>
+    <string name="liked_hint">你已经点过赞</string>
+    <string name="like_self_hint">不能对自己的回复进行操作</string>
+    <string name="disliked_hint">你已经点过踩</string>
+    <string name="article_detail_comment_newest">最新评论</string>
+    <string name="article_report_not_interested">不感兴趣</string>
+    <string name="article_report_bad">举报问题文章</string>
+    <string name="article_keep_cancel">取消收藏</string>
+    <string name="article_keep_success">收藏成功</string>
+    <string name="report_success">操作成功</string>
+    <string name="article_webview">网页浏览</string>
+    <string name="article_social_sina">新浪</string>
+    <string name="article_social_weixin">微信</string>
+    <string name="article_social_friend">朋友圈</string>
+    <string name="article_social_qq">手机QQ</string>
+    <string name="article_social_qzone">QQ空间</string>
+    <string name="app_web_out">用浏览器打开</string>
+    <string name="app_web_copy">复制链接</string>
+    <string name="post_at">%1$s前</string>
+    <string name="just_now">刚刚</string>
+    <string name="sd_absent">请预报好sd卡</string>
+    <string name="post_first_comment">快来抢沙发</string>
+    <string name="load_failed">请检查网络状况后重试</string>
+
+    <!-- app环境 -->
+    <string name="app_dev">测试</string>
+    <string name="app_pre">预发布</string>
+    <string name="app_idc">正式</string>
+    <string name="app_url_loading_title">加载中...</string>
+
+</resources>

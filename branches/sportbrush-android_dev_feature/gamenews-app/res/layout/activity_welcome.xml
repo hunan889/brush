@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="@dimen/welcome_logo_width"
+        android:layout_height="@dimen/welcome_logo_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/welcome_logo"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/welcome_name_width"
+        android:layout_height="@dimen/welcome_name_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/welcome_text_top"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/img_custom"
+        android:layout_width="@dimen/custom_ic_width"
+        android:layout_height="@dimen/custom_ic_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/ic_custom"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <ViewStub
+        android:id="@+id/app_custom_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/app_custom_layout" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/common_title_back_image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:minWidth="70dip"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/common_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="车库"
+        android:textColor="@color/bg" />
+
+    <ImageButton
+        android:id="@+id/common_title_help"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:minWidth="70dip"
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <!-- in login layout -->
+    <string name="yyudb_bt_back">返回游戏</string>
+    <string name="yyudb_bt_login">登录</string>
+    <string name="yyudb_bt_reg">注册</string>
+    <string name="yyudb_bt_chpwd">找回密码</string>
+    <string name="yyudb_hedit_uname">YY通行证/邮箱/手机号码</string>
+    <string name="yyudb_hedit_pwd">帐号密码</string>
+    <string name="yyudb_chk_remember_pwd">记住密码</string>
+    
+    <!-- in verify layout -->
+    <string name="yyudb_txt_input_phone_number">手机号码</string>
+	<string name="yyudb_bt_send_verify">免费获取短信验证码</string>
+	<string name="yyudb_txt_reg_web1">没有手机请</string>
+	<string name="yyudb_txt_reg_web2">点这里</string>
+	
+	<!-- in done layout -->
+	<string name="yyudb_txt_phone">00000000000</string>
+	<string name="yyudb_hedit_verify">短信中的数字验证码</string>
+	<string name="yyudb_hedit_new_pwd">设置6至20位登录密码</string>
+	<string name="yyudb_bt_done">完成</string>
+	<string name="yyudb_txt_resend">重新获取验证码</string>
+</resources>

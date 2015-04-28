@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <ImageView
+        android:id="@+id/list_article_corner"
+        android:layout_width="@dimen/home_list_corner_width"
+        android:layout_height="@dimen/home_list_corner_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/list_article_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/article_list_item_corner_selector"
+        android:paddingBottom="10dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_order"
+            style="@style/HomeListPrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1dp"
+            android:background="@color/gamelist_time_color"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/list_article_img1"
+            android:layout_width="@dimen/home_list_big_img_width"
+            android:layout_height="@dimen/home_list_big_img_height"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@id/tv_order"
+            android:layout_toRightOf="@id/tv_order"
+            android:scaleType="centerCrop"
+            android:src="@drawable/article_list_item_loading" />
+
+        <TextView
+            android:id="@+id/list_article_title"
+            style="@style/HomeListPrimaryText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-4dp"
+            android:layout_toEndOf="@id/list_article_img1"
+            android:layout_toRightOf="@id/list_article_img1"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/list_article_desc"
+            style="@style/HomeListPrimaryText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_article_title"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/list_article_img1"
+            android:layout_toRightOf="@id/list_article_img1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textColor="@color/global_lv_secondary_text"
+            android:textIsSelectable="false"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/list_article_info_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/list_article_img1"
+            android:layout_toRightOf="@+id/list_article_img1"
+            android:gravity="bottom" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/list_article_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_ic_video" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/list_article_count"
+                    style="@style/HomeListSecondaryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/home_ic_comment_count"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="9999"
+                    android:textIsSelectable="false" />
+
+                <ImageView
+                    android:id="@+id/iv_hot"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hot" />
+
+                <TextView
+                    android:id="@+id/list_article_fav"
+                    style="@style/HomeListSecondaryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/article_list_fav_selector"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="9999"
+                    android:textIsSelectable="false" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

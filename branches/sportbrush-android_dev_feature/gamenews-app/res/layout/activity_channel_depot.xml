@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.yy.android.gamenews.ui.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:drawableLeft="@drawable/actionbar_back_selector"
+        app:drawableRight="@drawable/actionbar_search_selector"
+        app:title="@string/channel_depot" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/grid_item"
+            layout="@layout/channel_grid_item_fly"
+            android:visibility="invisible" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/channel_header_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/globalMarginWindowLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_title_left_mark"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/channel_my_favourite"
+                            android:textColor="@color/channel_depot_lable"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/channel_manage_tips"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/channel_manage_tips"
+                            android:textColor="@color/channel_depot_tips"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/action_complete"
+                            android:layout_width="51dip"
+                            android:layout_height="24dip"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/channel_depot_edit_selector"
+                            android:gravity="center"
+                            android:text="@string/channel_depot_edit"
+                            android:textColor="@color/channel_depot_edit"
+                            android:textSize="13sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <!-- style="@style/channelDepotMarginWindowWithOffset" -->
+
+                    <com.yy.android.gamenews.ui.view.CategoryFlowLayout
+                        android:id="@+id/category_flow_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginStart="10dip"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginEnd="10dip"
+                        app:gfColumnWidth="@dimen/gridview_item_width"
+                        app:gfMinHSpacing="4dp"
+                        app:gfVSpacing="10dp" />
+                </LinearLayout>
+
+                <View style="@style/dividerLightColor" />
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/welcome_hint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/welcome_depot_hint"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="#ff1d1a1a"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/welcom_hint_2"
+                android:textColor="#ffffffff"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

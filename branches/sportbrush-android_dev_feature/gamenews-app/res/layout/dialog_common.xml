@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_header" >
+
+        <TextView
+            android:id="@+id/dialog_caption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="13.33dp"
+            android:paddingTop="20dp"
+            android:textColor="@color/global_lv_primary_text"
+            android:textSize="17.33sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Message part -->
+
+            <FrameLayout
+                android:id="@+id/dialog_customize"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_body" >
+
+                <TextView
+                    android:id="@+id/dialog_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textColor="@color/global_text_color"
+                    android:textSize="13.33sp" />
+            </FrameLayout>
+
+            <!-- Image for Split line -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/global_divider_light" />
+
+            <!-- Button options -->
+
+            <LinearLayout
+                android:id="@+id/dialog_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dialog_btn_single"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_btn_down_selector"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textColor="@color/main_menu_text"
+                    android:textSize="17.33sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/dialog_btn_positive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_btn_left_selector"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textColor="@color/main_menu_text"
+                    android:textSize="17.33sp" />
+
+                <View
+                    android:id="@+id/dialog_btn_separator"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/global_divider_light" />
+
+                <TextView
+                    android:id="@+id/dialog_btn_negative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_btn_right_selector"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textColor="@color/main_menu_text"
+                    android:textSize="17.33sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

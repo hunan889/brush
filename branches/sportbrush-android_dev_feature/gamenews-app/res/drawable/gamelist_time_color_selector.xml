@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/global_text_info_color" android:state_enabled="false"/>
+    <item android:color="@color/global_text_info_color" android:state_selected="false"/>
+    <item android:color="@color/gamelist_time_color"/>
+
+</selector>

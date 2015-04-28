@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/filter_view"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="41dip"
+        android:background="@color/sched_page_color"
+        android:orientation="horizontal"
+        android:paddingBottom="12dip"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/all_sched_but"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/sche_tab_left_selector"
+            android:text="@string/all_sched"
+            android:textColor="@color/sche_tab_selector"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/all_team_but"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sche_tab_middle_selector"
+            android:text="@string/all_team"
+            android:textColor="@color/sche_tab_selector"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/my_alarm_but"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sche_tab_right_selector"
+            android:text="@string/my_alarm"
+            android:textColor="@color/sche_tab_selector"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

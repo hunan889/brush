@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yy.android.gamenews.ui.view.ActionBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:id="@+id/actionbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    gamenews:drawableLeft="@drawable/actionbar_back_selector"
+    gamenews:title="@string/article_detail" />

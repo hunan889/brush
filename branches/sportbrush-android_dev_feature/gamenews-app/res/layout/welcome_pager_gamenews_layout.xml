@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/welcome_pager_img_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/welcome_pager_img_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/welcome_pager_img_three"
+        android:layout_width="match_parent"
+        android:paddingRight="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginEnd="30dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/actionbar_back_selector"
+        android:layout_marginBottom="@dimen/game_welcome_bottom_to_up_txt_height" />
+
+</RelativeLayout>

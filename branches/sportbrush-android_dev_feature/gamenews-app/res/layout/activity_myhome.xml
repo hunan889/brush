@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_bg_dark" >
+
+    <com.yy.android.gamenews.ui.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        gamenews:background="@color/global_bg_dark"
+        gamenews:drawableLeft="@drawable/myhome_back_selector" />
+    <!-- 收藏 -->
+
+    <LinearLayout
+        android:id="@+id/my_fav_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingRight="10dp" >
+
+        <!-- android:text="@string/my_favor" -->
+
+        <TextView
+            android:id="@+id/tv_favor_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableLeft="@drawable/btn_myfavor_selector"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="@drawable/my_favor_text_color_selector"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar"
+        android:layout_gravity="center_vertical"
+        android:background="@color/global_bg_dark"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 登录按钮/个人信息 -->
+
+            <FrameLayout
+                android:id="@+id/info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <!-- 登录 -->
+
+                <LinearLayout
+                    android:id="@+id/home_login_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12.66dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/login_weibo_btn"
+                            android:layout_width="@dimen/my_login_btn_width"
+                            android:layout_height="@dimen/my_login_btn_height"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_login_sina_selector" />
+
+                        <ImageView
+                            android:id="@+id/login_yy_btn"
+                            android:layout_width="@dimen/my_login_btn_width"
+                            android:layout_height="@dimen/my_login_btn_height"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_login_yy_selector" />
+
+                        <ImageView
+                            android:id="@+id/login_qq_btn"
+                            android:layout_width="@dimen/my_login_btn_width"
+                            android:layout_height="@dimen/my_login_btn_height"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="onClick"
+                            android:src="@drawable/btn_login_qq_selector" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:text="@string/login_prompt"
+                        android:textColor="@color/global_label_color" />
+                </LinearLayout>
+
+                <!-- 个人信息 -->
+
+                <LinearLayout
+                    android:id="@+id/home_user_img_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <com.yy.android.gamenews.ui.view.RoundImageView
+                        android:id="@+id/home_user_img"
+                        android:layout_width="@dimen/my_head_btn_width"
+                        android:layout_height="@dimen/my_head_btn_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        gamenews:border_outside_color="@color/my_image_border_color"
+                        gamenews:border_outside_thickness="2dp" />
+
+                    <TextView
+                        android:id="@+id/tv_home_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/my_favor_user_name" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- 底部按钮区 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_layout"
+                android:layout_marginTop="44dp"
+                android:orientation="vertical"
+                android:paddingBottom="13.33dp"
+                android:paddingLeft="9.33dp"
+                android:paddingRight="9.33dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:orientation="vertical" >
+
+                    <!-- 賺取T豆 -->
+
+                    <RelativeLayout
+                        android:id="@+id/my_event_sign_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50.66dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/my_gift_bg_selector"
+                        android:clickable="true"
+                        android:onClick="onClick"
+                        android:orientation="horizontal"
+                        android:paddingLeft="13.33dp"
+                        android:paddingRight="13.33dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/get_tdou"
+                            android:textAppearance="@style/MySettingPrimaryText"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/my_event_has_tdou_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_message_hint"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <!-- 活动按钮 -->
+
+                    <RelativeLayout
+                        android:id="@+id/my_event_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50.66dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/my_gift_bg_selector"
+                        android:clickable="true"
+                        android:onClick="onClick"
+                        android:paddingLeft="13.33dp"
+                        android:paddingRight="13.33dp"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/my_event_ic_gift"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="13.33dp"
+                            android:src="@drawable/ic_gift" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/my_event_ic_gift"
+                            android:singleLine="true"
+                            android:text="@string/my_event"
+                            android:textAppearance="@style/MySettingPrimaryText" />
+
+                        <ImageView
+                            android:id="@+id/my_event_has_event_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_message_hint"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View style="@style/global_divider" />
+                <!-- 我的游戏特权 -->
+
+                <RelativeLayout
+                    android:id="@+id/my_tequan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_list_item_height"
+                    android:background="@drawable/my_setting_bg_selector"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:paddingLeft="@dimen/my_list_item_padding_left"
+                    android:paddingRight="@dimen/my_list_item_padding_right"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/my_tequan"
+                        android:textAppearance="@style/MySettingPrimaryText" />
+                </RelativeLayout>
+
+                <View style="@style/global_divider" />
+                <!-- 仅在wifi下自动加载图片 -->
+
+                <RelativeLayout
+                    android:id="@+id/my_only_wifi_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/my_list_item_height"
+                    android:background="@drawable/my_setting_bg_selector"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:paddingLeft="@dimen/my_list_item_padding_left"
+                    android:paddingRight="@dimen/my_list_item_padding_right" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/my_only_wifi"
+                        android:textAppearance="@style/MySettingPrimaryText" />
+
+                    <CheckBox
+                        android:id="@+id/cb_use_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_my_switch_selector"
+                        android:button="@null"
+                        android:onClick="onClick" />
+                </RelativeLayout>
+
+                <View style="@style/global_divider" />
+
+                <!-- 清除缓存 -->
+
+                <RelativeLayout
+                    android:id="@+id/clean_cache_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/my_list_item_height"
+                    android:background="@drawable/my_setting_bg_selector"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:paddingLeft="@dimen/my_list_item_padding_left"
+                    android:paddingRight="@dimen/my_list_item_padding_right" >
+
+                    <TextView
+                        android:id="@+id/tv_clean_cache"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/my_clear_cache"
+                        android:textAppearance="@style/MySettingPrimaryText" />
+
+                    <TextView
+                        android:id="@+id/tv_cache_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textAppearance="@style/MySettingSecondaryText" />
+                </RelativeLayout>
+
+                <View style="@style/global_divider" />
+                <!-- 推送通知 -->
+
+                <RelativeLayout
+                    android:id="@+id/my_allow_push_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/my_list_item_height"
+                    android:background="@drawable/my_setting_bg_selector"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:paddingLeft="@dimen/my_list_item_padding_left"
+                    android:paddingRight="@dimen/my_list_item_padding_right" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/my_allow_push"
+                        android:textAppearance="@style/MySettingPrimaryText" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allow_push"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_my_switch_selector"
+                        android:button="@null"
+                        android:onClick="onClick" />
+                </RelativeLayout>
+
+                <View style="@style/global_divider" />
+
+                <!-- 检查更新 -->
+
+                <RelativeLayout
+                    android:id="@+id/check_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/my_list_item_height"
+                    android:background="@drawable/my_setting_bg_selector"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:paddingLeft="@dimen/my_list_item_padding_left"
+                    android:paddingRight="@dimen/my_list_item_padding_right" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/my_check_update"
+                        android:textAppearance="@style/MySettingPrimaryText" />
+
+                    <TextView
+                        android:id="@+id/tv_version_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textAppearance="@style/MySettingSecondaryText" />
+                </RelativeLayout>
+
+                <View style="@style/global_divider" />
+                <!-- 意见反馈 -->
+
+                <TextView
+                    android:id="@+id/feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_list_item_height"
+                    android:background="@drawable/my_setting_bg_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/my_list_item_padding_left"
+                    android:paddingRight="@dimen/my_list_item_padding_right"
+                    android:text="@string/my_feedback"
+                    android:textAppearance="@style/MySettingPrimaryText" />
+
+                <View style="@style/global_divider" />
+
+                <!-- 推荐 -->
+
+                <TextView
+                    android:id="@+id/share_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_list_item_height"
+                    android:background="@drawable/my_setting_bg_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/my_list_item_padding_left"
+                    android:paddingRight="@dimen/my_list_item_padding_right"
+                    android:textAppearance="@style/MySettingPrimaryText" />
+
+                <View style="@style/global_divider" />
+                <!-- 退出按钮 -->
+
+                <RelativeLayout
+                    android:id="@+id/logout_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_list_item_height"
+                    android:layout_gravity="center"
+                    android:background="@drawable/my_setting_bg_selector"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/my_list_item_padding_left"
+                        android:paddingRight="@dimen/my_list_item_padding_right"
+                        android:text="@string/my_log_out"
+                        android:textAppearance="@style/MySettingLogout" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

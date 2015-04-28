@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- actionbar -->
+    <color name="actionbar_text">#ffffff</color>
+    <color name="actionbar_bg">#7ba71c</color>
+
+    <!-- 首页 -->
+    <color name="main_menu_bg">@color/global_bg_dark</color>
+    <color name="main_menu_text">#7ba71c</color>
+    <color name="main_menu_bg_pressed">#333333</color>
+    <color name="main_menu_bg_normal">@color/global_bg_dark</color>
+    <color name="main_user_img_border">#fcf9f7</color>
+    <color name="main_menu_text_pressed">#7ba71c</color>
+    <color name="main_menu_text_normal">#9fb38f</color>
+    <color name="main_list_item_active_bg">#fff4dd</color>
+    <color name="main_list_item_bingo_bg">#f5fff1</color>
+    <color name="main_list_bingo_text_color">#38a614</color>
+    <color name="main_welcome_guide_bg_color">#e85d40</color>
+
+    <!-- 我的最爱 -->
+    <color name="news_head_bg">@color/global_bg_dark</color>
+    <color name="news_title_text_selected">#7ba71c</color>
+    <color name="news_title_text_normal">#5d6a52</color>
+    <color name="news_title_bg_pressed">#333333</color>
+    <color name="news_title_bg_normal">#e8e8e8</color>
+    <!-- 通用 -->
+    <color name="global_dropdown_text_color">#9fb38f</color>
+    <color name="global_dropdown_text_color_selected">#ff7b23</color>
+    <color name="global_divider_color">#ffcdcdcd</color>
+    <color name="global_divider_color_1">#ff3c3c3c</color>
+    <color name="global_divider_color_2">#ffededed</color>
+    <color name="global_default_cover_bg">#f2f1f1</color>
+    <color name="global_bg_light">#ffffff</color>
+    <color name="global_bg_dark">#ff2c2828</color>
+    <color name="global_black">#ff000000</color>
+    <color name="global_gray">#ffb9b9b9</color>
+    <color name="global_white">#ffffffff</color>
+    <color name="global_transparent">#44ffffff</color>
+    <color name="global_list_item_transparent">#44000000</color>
+    <color name="global_label_color">#ffb3a08f</color>
+    <color name="global_text_color">#ff444444</color>
+    <color name="global_text_hint_color">#ff777777</color>
+    <color name="global_text_info_color">#ff999999</color>
+    <color name="global_img_border">#7ba71c</color>
+    <color name="global_waterfall_list_bg">#dbdbdb</color>
+    <color name="global_list_bg">#ffffff</color>
+    <color name="global_list_item_bg">#ffffff</color>
+    <color name="global_list_item_pressed">#efefef</color>
+    <color name="global_list_item_bg_dark">#161719</color>
+    <color name="global_list_item_pressed_dark">#292b2f</color>
+    <color name="global_lv_primary_text_disabled">#aaaaaa</color>
+    <color name="global_lv_primary_text_dark">#ffffff</color>
+    <color name="global_lv_primary_text_disabled_dark">#ffffff</color>
+    <color name="global_lv_primary_text">#3c3c3c</color>
+    <color name="global_lv_secondary_text">#999999</color>
+    <color name="global_lv_secondary_text_dark">#999999</color>
+    <color name="divider_line">#7ba71c</color>
+    <color name="global_dialog_title">#3c3c3c</color>
+    <color name="global_head_photo_color">#e85d40</color>
+    
+    <!-- 个人中心 -->
+    <color name="my_favor_text_color">#7ba71c</color>
+    <color name="my_favor_text_color_dark">#ff43802f</color>
+    <color name="my_image_border_color">#fff76858</color>
+    <color name="my_favor_user_name">#ffbff792</color>
+    <color name="my_setting_secondary_text">#ff5c6952</color>
+    <color name="my_setting_primary_text">#ff9fb38f</color>
+    <color name="my_setting_logout">#fff39800</color>
+
+    <!-- 频道仓库 -->
+    <color name="channel_depot_tips">#b3a4a4</color>
+    <color name="channel_depot_lable">#7ba71c</color>
+    <color name="channel_depot_edit">#ffffff</color>
+    <color name="channel_name">#2c2828</color>
+    <color name="channel_header_bg">#eaffe4</color>
+    <color name="hot_channel_bg">#f2f2f2</color>
+    <!-- 详情页 -->
+    <color name="article_detail_comment_primary_text">#544c4c</color>
+    <color name="article_detail_comment_divider">#e4d4d1</color>
+    <color name="article_comment_info">#a8b3a4</color>
+    <color name="article_detail_actionbar_color">#98ce24</color>
+
+    <!-- 赛事表 -->
+    <color name="calendar_bg">#f6f6f6</color>
+    <color name="calendar_week_normal">#666666</color>
+    <color name="calendar_date_normal">#3c3c3c</color>
+    <color name="calendar_week_selected">#ffffff</color>
+    <color name="calendar_week_highlight">#7ba71c</color>
+    <color name="gamelist_final_text_color">#ff622b</color>
+    <color name="gamelist_time_color">#ff7b23</color>
+    <color name="gamelist_bg">#ffffff</color>
+    <color name="gamelist_filter_bg">#e8e8e8</color>
+    <color name="gamelist_filter_text">#999999</color>
+    <color name="gamelist_filter_text_selected">#ffffff</color>
+
+    <!-- <color name="sched_page_color">#7ba71c</color> -->
+    <color name="sched_page_color">#7ba71c</color>
+    <color name="league_color">#3c3c3c</color>
+    <color name="league_pressed_color">#999999</color>
+    <color name="black">#000000</color>
+    <color name="game_item_layer_color">#20000000</color>
+
+    <!-- 赛事 -->
+    <color name="union_bg">#EDEDED</color>
+    <color name="union_tab_selected_bg">#30000000</color>
+    <color name="union_name_color">#3c3c3c</color>
+    <color name="union_desc_color">#999999</color>
+    <color name="race_topic_title_color">#e85d40</color>
+    <color name="race_topic_listview_bg_color">#fff5e5</color>
+    <color name="wondlerful_race_title_color">#d7c0ab</color>
+    <color name="union_race_item_color">#fff5e5</color>
+
+    <!-- 秀场 -->
+    <color name="show_detail_bg">#fff2f2f2</color>
+
+    <!-- 社区 -->
+    <color name="list_bg">#f2f2f2</color>
+    <color name="adv_bg">#aaf2f2f2</color>
+    <color name="tag_list_item_tag_name_bg">#30000000</color>
+    <color name="topic_comment_info">#88665e</color>
+
+</resources>

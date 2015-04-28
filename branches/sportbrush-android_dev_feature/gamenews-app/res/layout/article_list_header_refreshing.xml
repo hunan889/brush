@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/global_sport_bursh_refresh" />
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:id="@+id/head_contentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="10.33dp"
+        android:paddingTop="5.33dp" >
+
+        <!-- 箭头图像、进度条 -->
+
+        <FrameLayout
+            android:id="@+id/layout_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="6.66dp" >
+
+            <!-- 箭头 -->
+
+
+            <!-- 进度条 -->
+
+            <ImageView
+                android:id="@+id/lvHeaderProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/global_header_footer_loading" />
+        </FrameLayout>
+
+        <!-- 提示、最近更新 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/layout_indicator"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <!-- 提示 -->
+
+            <TextView
+                android:id="@+id/lvHeaderTipsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉刷新"
+                android:textColor="@color/global_text_info_color"
+                android:textSize="12sp" />
+
+            <!-- 最近更新 -->
+
+            <TextView
+                android:id="@+id/lvHeaderLastUpdatedTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/global_text_info_color"
+                android:textSize="10.66sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        style="@style/global_divider_2"
+        android:layout_marginBottom="1dp" />
+
+</LinearLayout>

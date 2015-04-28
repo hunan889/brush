@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.66dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/column_name"
+            style="@style/channeleDepotLable"
+            android:layout_gravity="start|center_vertical"
+            android:text="@string/channel_my_favourite" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/channel_line1"
+        style="@style/channelDepotMarginWindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/channel_1"
+            layout="@layout/channel_columns_item"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/column_item_height"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/channel_2"
+            layout="@layout/channel_columns_item"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/column_item_height"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/channel_3"
+            layout="@layout/channel_columns_item"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/channel_line2"
+        style="@style/channelDepotMarginWindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.66dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/channel_4"
+            layout="@layout/channel_columns_item"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/column_item_height"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/channel_5"
+            layout="@layout/channel_columns_item"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/column_item_height"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/channel_6"
+            layout="@layout/channel_columns_item"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

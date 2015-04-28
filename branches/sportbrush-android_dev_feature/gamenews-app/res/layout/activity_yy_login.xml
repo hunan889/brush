@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/global_bg_dark" >
+
+    <!-- 登录按钮/个人信息 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <FrameLayout
+                android:id="@+id/info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="17.33dp"
+                android:paddingRight="17.33dp"
+                android:paddingTop="@dimen/my_margin_top" >
+
+                <!-- 个人信息 -->
+
+                <LinearLayout
+                    android:id="@+id/home_user_img_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/login_yy_btn"
+                        android:layout_width="@dimen/my_head_btn_width"
+                        android:layout_height="@dimen/my_head_btn_height"
+                        android:layout_margin="11.66dp"
+                        android:onClick="onClick"
+                        android:src="@drawable/btn_login_yy_selector" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- 收藏 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_layout"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="17.33dp"
+                android:paddingRight="17.33dp" >
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_login_input_bg"
+                    android:hint="帐号/邮箱"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="#b3a08f"
+                    android:textColorHint="#4c4545"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/my_login_input_bg"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="#b3a08f"
+                    android:textColorHint="#4c4545"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/my_login_btn_selector"
+                    android:onClick="onClick"
+                    android:text="@string/global_login"
+                    android:textColor="@color/global_white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- 底部按钮区 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingLeft="17.33dp"
+        android:paddingRight="17.33dp" >
+
+        <TextView
+            android:id="@+id/btn_get_pwd"
+            android:layout_width="94.66dp"
+            android:layout_height="45.33dp"
+            android:background="@drawable/my_login_get_psw_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="忘记密码"
+            android:textColor="#b3a08f"
+            android:textSize="13.33sp" />
+
+        <TextView
+            android:id="@+id/btn_register"
+            android:layout_width="94.66dp"
+            android:layout_height="45.33dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/my_login_regist_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="注册帐号"
+            android:textColor="#b3a08f"
+            android:textSize="13.33sp" />
+    </RelativeLayout>
+
+    <com.yy.android.gamenews.ui.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        gamenews:background="@color/global_bg_dark"
+        gamenews:drawableLeft="@drawable/actionbar_back_selector_dark" />
+
+</RelativeLayout>

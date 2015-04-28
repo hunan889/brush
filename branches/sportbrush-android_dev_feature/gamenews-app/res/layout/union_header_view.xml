@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/global_white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:id="@+id/iv_union_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/article_list_item_loading"
+            android:contentDescription="@drawable/article_list_item_loading"
+            android:scaleType="fitXY"
+            android:src="@drawable/article_list_item_loading"
+            gamenews:adjustType="auto_adjust_scale_height"
+            gamenews:scaleRate="1.828" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/article_banner_bg"
+            android:gravity="bottom"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/union_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order"
+                    android:textColor="@color/global_white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/union_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/union_support_tip"
+                    android:textColor="@color/global_white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_support_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_union_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/tv_union_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:lineSpacingExtra="8dp"
+                android:textColor="@color/union_name_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/actionbar_bg"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:text="@string/special_desc"
+                android:textColor="@color/global_white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            style="@style/global_divider_2"
+            android:layout_height="2dp" />
+    </LinearLayout>
+
+</LinearLayout>

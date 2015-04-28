@@ -1,0 +1,92 @@
+-- v0.9, 2013-06-21, by james, update for test version. 
+-- v1.1, 2013-06-25, by james, support multi project publish.
+-- v1.2, 2013-06-26, by james, change log:
+	1) add interface: 
+		getSdkVersion() -- support return sdk version code.
+		setTestMode() -- support product and test mode in one lib.
+		doSmsRegister() -- support one key register, demo, not released.
+	2) detail the time out error info.
+-- v1.2.1 2013-06-27, by james, change log:
+	1) fix bug: when the browser be changed or can't found default brower, click "forget pwd with no phone_num" will cause crash!
+-- v1.2.2 2013-07-02, by james, change log:
+	1) hide the input keyboard when click login button.
+	2) support one key register, released.
+-- v1.2.3 2013-07-02, by james, change log:
+	1) support auto complete, when first install one program and the sso list is not empty.
+-- v1.3.0 2013-07-02, by james, change log:
+	1) support auto error feedback.
+-- v1.3.1 2013-07-03, by james, change log:
+	1) add system version code and sdk version code to feedback info.
+-- v1.3.2 2013-07-04, by james, change log:
+	1) doWebRegister interface support fixid mode.
+-- v1.3.3 2013-07-04, by james, change log:
+	1) doSmsRegister interface will block in test mode, for sending sim-sms manually.
+-- v1.3.5 2013-07-24, by james, change log:
+	1) add setUIOrientation interface.
+	2) change web reg to activity mode.
+	3) fixbug: uauth lib, the token will outdate in 6 hours.
+	4) support x86 platform.
+	5) fixbug: login will fail when use email/mobile/yyid.
+-- v1.3.6 2013-07-25, by james, change log:
+	1) add password param support on interface doLogin.
+-- v1.3.7 2013-07-25, by james, change log:
+	1) fixbug: hide input window when click login button (on ui mode).
+-- v1.3.8 2013-08-07, by james, change log:
+	1) support appid: yy_fls.
+	2) change ui action: when username changed, clear password.
+	3) change ui action: when login err(user not exist or pwd error)
+	 do not return but show toast info in activity.
+-- v1.4.0 2013-08-13, by james, change log:
+	1) support passport register
+	2) fixbug: in noui mode will not modify the sso db data.
+-- v1.4.1 2013-08-22, by james, change log:
+	1) support login use yy id(NOTE: yyid should not be a 11bit number, 
+	11bit number will be treat as a phone number, 
+	and the suffix string associate with the appid will be add behind to make ti into an passport)  
+	2) check the phone number should be 11bit pure number when doing register or doing  password modify.
+-- v1.4.2 2013-08-29, by james, change log:
+	1) fixbug: remember password for more project (not just yy_game appid) 
+	2) support appid: yy_pdsx
+-- v1.4.3 2013-10-12, by james, change log:
+	1) support passport modify(use piccode verify)
+-- v1.4.4 2013-10-23, by james, change log:
+	1) support yy_lol_box appid 
+-- v1.4.6 2013-11-07, by james, change log:
+	1) remove all debug log for security.
+	2) fixbug: reduce the cpu cost when doing dns.
+	3) smart url parse logic for more faster conn.
+-- v1.4.6.1 2013-11-20, by james, change log:
+	1) support appid: yy_ent
+-- v1.4.6.2 2013-11-20, by james, change log:
+	1) fixbug: login use session_key 
+-- v1.4.7.0 2013-12-16, by james, change log:
+	1) 修改set_appid()接口的策略, 放开对登录appid的限制, 如果是只需要使用sdk的登录功能, 则只需申请的appid生效即可. 
+		非登录功能, 可能需要客户端支持该appid, 此时依然需要向登录认证组申请新的sdk版本.
+	2) 增加对爆工资项目的appid配置: yy_baogongzi
+-- v1.4.7.1 2013-12-27, by james, change log:
+	1) 增加对gaga项目的appid配置: yy_gaga
+-- v1.4.7.2 2014-01-14, by james, change log:
+	1) 增加noui模式下的yyuid和udbuid传入功能.(临时选项, 后续有可能废除)
+-- v1.4.7.3 2014-02-26, by james, change log:
+	1) 增加对yy麻将游戏的支持.
+	2) 增加appid信息调试日志输出，便于调试.
+-- v1.4.8.3 2014-03-03, by james, change log:
+	1) 增加短信验证码统一注册流程接口
+	2) 增加短信验证码统一改密流程接口
+	3) 一些内部接口改动
+	4) 对于老的手机验证码注册接口不再可用（废除ui模式接口的注册、改密流程）
+	5) 在输入手机号登录的时候，不再默认增加相关尾缀，而是由其到后台的绑定关系
+		中转换到对应的通行证进行登录（备注：业务方可以在判断到手机号登录的时
+		候，先自行用加上尾缀方式尝试登录，如果提示用户不存在，再用手机号尝试登录。
+		备注2：由于登录手机号的绑定关系后续将是用户可变的，所以用手机号登录
+		对应到哪个帐号取决于用户绑定关系）
+-- v1.4.8.4 2014-03-14， by james, change log:
+	1) fixbug：新的短信注册、改密流程中，短信内容乱码的问题。
+	2) 改变短信下发有效期从1分钟改为15分钟。
+-- v1.4.8.6 2014-03-21， by james, change log:
+	1) fixbug：新的短信注册、改密流程中，下发短信验证appid错误
+-- v1.4.9.1 2014-03-25. by james, change log:
+	1) fixbug: 传入参数为null的时候, 返回参数错误, 而不会core掉
+	2) 增加 设置加载库失败的回调接口
+	3) 支持新注册接口的注册后立即登录, app不需要保存密码
+	4) 增加登录成功率统计上报功能(当点击进行登录的时候, 将结果成败, 以及登录信息/机器信息/udk版本信息/系统版本信息 上报)

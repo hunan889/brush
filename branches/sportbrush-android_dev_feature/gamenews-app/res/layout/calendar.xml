@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/calendar_bg"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/tv_month"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/global_lv_primary_text"
+        android:textSize="20sp" />
+
+    <View style="@style/global_divider_2" />
+
+    <com.yy.android.gamenews.ui.view.HorizontalListView
+        android:id="@+id/date_listview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+</LinearLayout>

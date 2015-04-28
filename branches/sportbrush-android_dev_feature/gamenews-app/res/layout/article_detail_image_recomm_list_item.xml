@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+        android:id="@+id/recomm_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/article_list_item_loading_big_dark"
+        android:scaleType="centerCrop"
+        gamenews:adjustType="auto_adjust_scale_height"
+        gamenews:scaleRate="0.86" />
+
+    <TextView
+        android:id="@+id/recomm_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:textColor="@color/global_lv_secondary_text"
+        android:textSize="13sp" />
+
+</LinearLayout>

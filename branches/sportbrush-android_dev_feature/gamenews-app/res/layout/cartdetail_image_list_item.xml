@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/global_list_item_bg_dark"
+    android:orientation="horizontal"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:weightSum="2" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:background="#aebfcc"
+        android:padding="1dp" >
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:id="@+id/image_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/article_list_item_loading"
+            gamenews:adjustType="auto_adjust_scale_height"
+            gamenews:scaleRate="1.227" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:background="#aebfcc"
+        android:padding="1dp" >
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:id="@+id/image_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/article_list_item_loading"
+            gamenews:adjustType="auto_adjust_scale_height"
+            gamenews:scaleRate="1.227" />
+    </FrameLayout>
+
+</LinearLayout>

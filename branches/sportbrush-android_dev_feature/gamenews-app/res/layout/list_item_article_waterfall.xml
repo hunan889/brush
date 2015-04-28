@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/global_default_cover_bg"
+    android:foreground="@drawable/water_fall_list_item_mask_selector" >
+
+    <RelativeLayout
+        android:id="@+id/list_article_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:id="@+id/list_article_img1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            gamenews:adjustType="auto_adjust_height" />
+
+        <TextView
+            android:id="@+id/list_article_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_article_img1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingBottom="13dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="7dp"
+            android:singleLine="false"
+            android:textColor="@color/global_text_color"
+            android:textIsSelectable="false"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</FrameLayout>

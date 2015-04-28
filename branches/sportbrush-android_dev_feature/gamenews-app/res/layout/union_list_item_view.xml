@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/union_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/article_list_item_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_order"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/one" />
+
+        <ImageView
+            android:id="@+id/iv_union_logo"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="9dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/top10_union" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/tv_union_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@color/union_name_color"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_union_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/union_desc_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_union_heat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/union_support"
+                android:textColor="@color/union_desc_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/global_divider_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</LinearLayout>

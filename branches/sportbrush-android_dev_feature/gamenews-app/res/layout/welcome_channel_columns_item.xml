@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:id="@+id/welcome_channel_column_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="0.5dp" >
+
+    <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+        android:id="@+id/welcome_channel_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        gamenews:adjustType="auto_adjust_height" />
+
+    <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+        android:id="@+id/welcome_channel_mask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/welcome_channel_selector"
+        gamenews:adjustType="auto_adjust_height" />
+
+    <TextView
+        android:id="@+id/welcome_channel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/my_favor_text_color"
+        android:textIsSelectable="false"
+        android:textSize="14sp" />
+
+</RelativeLayout>

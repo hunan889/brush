@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_notice"
+    android:layout_width="match_parent"
+    android:layout_height="35dp" 
+    android:background="@color/global_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_notice_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/notice" />
+
+        <com.yy.android.gamenews.ui.view.InfiniteBannerView
+            android:id="@+id/adv_list_banner"
+            android:layout_width="match_parent"
+            android:layout_height="33dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/notice_divider" />
+    
+<View 
+        android:id="@+id/notice_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/show_adv_selector"/>
+ 
+</FrameLayout>

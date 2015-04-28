@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/global_list_padding_h"
+    android:paddingRight="@dimen/global_list_padding_h"
+    android:paddingTop="6.66dp" >
+
+    <TextView
+        android:id="@+id/update_count_tv"
+        android:layout_width="match_parent"
+        android:layout_height="26.66dp"
+        android:background="@drawable/article_list_updated_bg"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:textColor="@color/global_white"
+        android:textSize="13.33sp" />
+    
+    <TextView
+        android:id="@+id/update_count_bubble"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/article_list_bubble"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/global_white"
+        android:visibility="invisible"
+        android:textSize="13.33sp"/>
+
+</RelativeLayout>

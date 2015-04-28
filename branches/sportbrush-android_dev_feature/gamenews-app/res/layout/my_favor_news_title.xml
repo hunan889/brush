@@ -1,0 +1,9 @@
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:button="@null"
+    android:layout_marginLeft="@dimen/my_favor_news_title_margin"
+    android:layout_marginRight="@dimen/my_favor_news_title_margin"
+    android:background="@drawable/news_title_bg_selector"
+    android:textColor="@drawable/news_title_text_color_selector"
+    android:textSize="17sp" />

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_size_30xp"
+        android:paddingBottom="@dimen/margin_size_30xp"
+        android:paddingLeft="@dimen/margin_size_30xp"
+        android:paddingRight="@dimen/margin_size_30xp" >
+
+        <LinearLayout
+            android:id="@+id/setting_cell_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="@dimen/margin_size_30xp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/setting_cell_caption"
+                style="@style/text_settings_title"
+                android:textSize="@dimen/font_size_32xp" />
+
+            <TextView
+                android:id="@+id/setting_cell_hint"
+                style="@style/text_settings_info"
+                android:textSize="@dimen/font_size_26xp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_cell_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical" >
+
+            <ImageView
+                android:id="@+id/setting_cell_icon"
+                style="@style/image_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/i_global_arrow_right" />
+
+            <TextView
+                android:id="@+id/setting_cell_content"
+                style="@style/text_settings_info"
+                android:textSize="@dimen/font_size_26xp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_size_30xp"
+                android:layout_toLeftOf="@id/setting_cell_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/brand_gitital_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dip"
+    android:background="@drawable/listview_selector_selector"
+    android:clickable="false"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/brand_gitital_view"
+        android:layout_width="5dip"
+        android:layout_height="20dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/brand_gitital_img" />
+
+    <TextView
+        android:id="@+id/brand_gitital_txt"
+        android:layout_width="0dip"
+        android:layout_height="20dip"
+        android:layout_marginTop="5dip"
+        android:layout_weight="1"
+        android:background="@drawable/listview_selector_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:text="A"
+        android:textColor="#3c3c3c"
+        android:textSize="15dip" />
+
+</LinearLayout>

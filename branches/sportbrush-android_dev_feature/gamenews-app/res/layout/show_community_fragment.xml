@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="41dip"
+        android:background="@color/actionbar_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="12dip"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/btn_square"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/sche_tab_left_selector"
+            android:textColor="@color/sche_tab_selector"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_hot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sche_tab_right_selector"
+            android:textColor="@color/sche_tab_selector"
+            android:textSize="13sp" />
+    </LinearLayout>
+    
+    <include layout="@layout/show_notice_view"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

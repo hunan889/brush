@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="custom_channel_name">
+
+    </string-array>
+
+    <dimen name="custom_ic_height">70dp</dimen>
+    <dimen name="custom_ic_width">150dp</dimen>
+
+    <drawable name="ic_custom">#00ffffff</drawable>
+
+</resources>

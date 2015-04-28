@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 本文件是被ANT使用, 用途: 为android应用制作渠道包 by yusulian -->
+<project name="mavn-antrun"  default="main">
+        <taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+        <property environment="env" />
+        <property name="apk.tools" value="${env.ANDROID_HOME}/apktool2/apktool"/>
+        <property name="sign.tools" value="${env.JAVA_HOME}/bin/jarsigner"/>
+		<property name="zipalign.tools" value="${env.ANDROID_HOME}/tools/zipalign"/>
+
+        <target name="main">
+			<echo> ----- make channel pack -----</echo>
+            <property name="keyFilePath" value="${keyFilePath}"/>
+            <property name="storePassword" value="${storePassword}"/>
+            <property name="keyPassword" value="${keyPassword}"/>
+            <property name="keyAlias" value="${keyAlias}"/>
+
+            <property name="src.apk" value="${outputdir}/${apkname}.apk"/>
+            <property name="dst.apk" value="${outputdir}/${apkname}_unsign.apk"/>
+			<property name="decode.dir" value="${outputdir}/channel/decode"/>
+			<property name="back.dir" value="${outputdir}/channel/back"/>
+			<property name="new.dir" value="${outputdir}/channel/new"/>
+			<property name="prechangefile" value="${decode.dir}\res\values\strings.xml"/>
+
+			<if>
+				<length file="${channelfile}" when="greater" length="0" />
+				<then>
+					<echo> --- prepare: decode apk ---</echo>
+					<exec executable="${apk.tools}">
+						<arg line="d ${src.apk} -o ${decode.dir}"/>
+					</exec>
+
+					<copy file="${prechangefile}" todir="${back.dir}/origin" overwrite="true"/>
+
+					<loadfile property="content" srcfile="${channelfile}"/> 
+					<for list="${content}" param="channelname" delimiter="&#13;&#10;">
+						<sequential>
+							<echo> --- First: check arch---</echo>
+							<antcall target="checkarch">
+								<param name="channelname" value="@{channelname}"/>
+								<param name="sourcedir" value="${decode.dir}"/>
+								<param name="backdir" value="${back.dir}"/>
+							</antcall>
+
+							<echo> --- Second: change channelname=@{channelname} from ${prechangefile} ---</echo>
+							<property name="TokenFile" value="${prechangefile}"/>
+							<replaceregexp file="${TokenFile}"
+										   match="&lt;string name=&quot;channelname&quot;&gt;.*&lt;/string&gt;"
+										   replace="&lt;string name=&quot;channelname&quot;&gt;@{channelname}&lt;/string&gt;"
+										   byline="true"
+										   encoding="utf-8"
+							/>
+							<copy file="${prechangefile}" todir="${back.dir}/@{channelname}" overwrite="true"/>
+
+							<echo> --- Third: make apk ---</echo>
+							<exec executable="${apk.tools}" failonerror="true">
+								<arg line="b ${decode.dir} -o ${dst.apk}"/>
+							</exec>
+
+							<echo> --- Fourth: sign apk ---</echo>
+							<exec executable="${sign.tools}" output="sign.log">
+								<arg line="-verbose -keystore ${keyFilePath} -storepass ${storePassword} -keypass ${keyPassword} -sigalg MD5withRSA -digestalg SHA1 ${dst.apk} ${keyAlias}"/>
+							</exec>
+
+							<echo> --- Fifth: zipalign apk ---</echo>
+							<exec executable="${zipalign.tools}" output="zipalign.log">
+								<arg line="-v 4 ${dst.apk} ${outputdir}/${apkname}-@{channelname}.apk"/>
+							</exec>
+
+							<delete file="${dst.apk}"/>
+						</sequential>
+					</for>
+				 </then>
+				 <else>
+					   <echo message="${channelfile} is empty!" />
+				 </else>
+			</if>
+        </target>
+
+        <target name="checkarch">
+			<!-- 目的：渠道包带上指定的架构，
+			1. 取消默认的官方包：将渠道默认offical调整为test，将offical加入渠道包列表markets.list。
+			2. 增加排除架构列表${basedir}/../excludearch.list
+			3. 指定带上架构的渠道名格式：渠道名_架构1[_架构2]  
+			-->
+			<property name="excludearchfile" value="${basedir}/../excludearch.list"/>
+            <echo message="${excludearchfile}" />
+			<if>
+				<!-- 检测${excludearchfile}文件是否存在 -->
+				<and>
+					<available file="${excludearchfile}" type="file"/>
+					<length file="${excludearchfile}" when="greater" length="0" />
+				</and>
+				<then>
+					<loadfile property="excludearchs" srcfile="${basedir}/../excludearch.list" />
+					<for list="${excludearchs}" param="arch" delimiter="&#13;&#10;">
+					  <sequential>
+						<echo>arch @{arch}</echo>
+						<if>
+						<!-- 事先备份排除的架构@{arch} -->
+							<available file="${sourcedir}/lib/@{arch}" type="dir"/>
+							<then>
+								<move todir="${backdir}/lib/@{arch}">
+									<fileset dir="${sourcedir}/lib/@{arch}"/>
+								</move>
+							</then>
+						</if>
+						<if>
+							<!-- 渠道包带上指定的架构 -->
+							<contains string="${channelname}" substring="@{arch}"/>
+							<then>
+								<copy todir="${sourcedir}/lib/@{arch}">
+									<fileset dir="${backdir}/lib/@{arch}"/>
+								</copy>
+							</then>
+						</if>
+					  </sequential>
+					</for>
+				</then>
+			</if>
+        </target>
+</project>

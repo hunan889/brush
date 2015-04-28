@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="51dip"
+    android:background="@color/global_list_item_bg_dark"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/params_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/cartdetail_title_left_mark"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="测试"
+        android:textColor="@color/global_white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/params_nums"
+        android:layout_width="wrap_content"    
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:text="1365张"       
+        android:textColor="#999999" 
+        android:textSize="11sp" />
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+<style name="Dialog_Fullscreen_StatusBar">
+	<item name="android:windowNoTitle">true</item>
+</style>
+</resources>

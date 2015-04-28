@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_bg"
+    android:foreground="@drawable/topic_item_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:background="@drawable/article_list_item_loading_big"
+            gamenews:adjustType="auto_adjust_height" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:maxLines="2"
+            android:textColor="@color/global_lv_primary_text"
+            android:textSize="12sp" />
+
+        <View
+            style="@style/global_divider_2"
+            android:layout_height="0.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_person_default_dark" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/avatar_bg" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/global_lv_primary_text"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/global_lv_secondary_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/global_divider_2"
+            android:layout_height="0.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:drawableLeft="@drawable/home_ic_comment_count"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/home_ic_comment_count"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:textColor="@color/global_lv_secondary_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_like_coount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/article_list_fav_selector"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/article_list_fav_selector"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:textColor="@color/global_lv_secondary_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/article_list_item_transparent_selector" />
+
+</FrameLayout>

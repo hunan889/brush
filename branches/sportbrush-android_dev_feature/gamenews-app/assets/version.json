@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "MD5": "641148E6F28318A02FEAF71E481AAD8A",
+            "url": "http://shua.duowan.com/static/client/css/jjyy.css",
+            "version": "20140612"
+        },
+        {
+            "MD5": "9C2425AB8CAE56CAF1B7A8E4E95FAAC1",
+            "url": "http://shua.duowan.com/static/client/js/detail.js",
+            "version": "20140612"
+        },
+        {
+            "MD5": "1126C48BD586622002E93F20D07E564A",
+            "url": "http://shua.duowan.com/static/client/js/zepto.js",
+            "version": "20140612"
+        },
+        {
+            "MD5": "54C9C5D40126E729D3EB1DB81420C3D2",
+            "url": "http://shua.duowan.com/static/client/js/zepto.min.js",
+            "version": "20140612"
+        },
+        {
+            "MD5": "9C87F71F950B2ACC6D8E04946103C30A",
+            "url": "http://shua.duowan.com/static/client/newsdetail.html",
+            "version": "20140612"
+        },
+        {
+            "MD5": "36A169A1548D5CBDDE3291713BF6C89C0",
+            "url": "http://shua.duowan.com/static/client/sportsdetail.html",
+            "version": "20140613"
+        },
+        {
+            "MD5": "C5F0805AD5CB63A6F1C8E04EE65E5BB80",
+            "url": "http://shua.duowan.com/static/client/js/delayload.js",
+            "version": "20140613"
+        }
+    ],
+    "version": "20140610022712"
+}

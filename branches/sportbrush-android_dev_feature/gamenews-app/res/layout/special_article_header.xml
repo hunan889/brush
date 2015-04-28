@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/special_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/article_list_item_loading_big"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/special_desc_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/special_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#dcd9d8"
+            android:lineSpacingExtra="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#53413d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/actionbar_bg"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="@string/special_desc"
+            android:textAlignment="center"
+            android:textColor="@color/global_white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View style="@style/global_divider_2" />
+
+</LinearLayout>

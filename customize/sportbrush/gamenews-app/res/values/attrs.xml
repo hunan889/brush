@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="gamenews">
+        <attr name="border_outside_thickness" format="dimension" />
+        <attr name="border_inside_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+        
+        <!-- ActionBar -->
+        <attr name="background" format="color" />				<!-- 背景颜色 -->
+        <attr name="drawableLeft" format="reference|integer" /> <!-- 左边图片 -->
+        <attr name="drawableRight" format="reference|integer" /> <!-- 右边图片 -->
+        <attr name="rightBorderColor" format="color" />		<!-- 右边图片边框颜色 -->
+        <attr name="leftBorderColor" format="color" />		<!-- 右边图片边框颜色 -->
+        <attr name="isRightImageRound" format="boolean" />   <!-- 右边图片是否为圆角 -->
+        <attr name="isLeftImageRound" format="boolean" />   <!-- 左边图片是否为圆角 -->
+        <attr name="title" format="string" />				<!-- 中间标题 -->
+        <attr name="titleColor" format="color" />				<!-- 中间标题 颜色-->
+        <attr name="titleSize" format="dimension" />	<!-- 中间标题 大小-->
+        <attr name="leftText" format="string" />				<!-- 左文本 -->
+        <attr name="rightText" format="string" />				<!-- 右文本 -->
+        
+        <!-- AutoAdjustImageView -->
+        <attr name="adjustType" format="reference|string"/>
+        <attr name="scaleRate" format="reference|float"/>
+        
+        <!-- Slide View -->
+        <attr format="reference" name="animNextIn" />
+        <attr format="reference" name="animNextOut" />
+        <attr format="reference" name="animPrevIn" />
+        <attr format="reference" name="animPrevOut" />
+        <attr format="integer" name="referWidth" />
+        <attr format="integer" name="referHeight" />
+    </declare-styleable>
+    <declare-styleable name="GridFlowLayout">
+        <attr name="gfColumnWidth" format="dimension" />
+        <attr name="gfVSpacing" format="dimension" />
+        <attr name="gfMinHSpacing" format="dimension" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.yy.android.gamenews.ui.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        gamenews:drawableLeft="@drawable/actionbar_back_selector"
+        gamenews:title="@string/cartport_title" />
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="53dip"
+        android:layout_below="@id/actionbar"
+        android:background="#222528"
+        android:orientation="horizontal"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip" >
+
+        <Button
+            android:id="@+id/brand_choose_but"
+            android:layout_width="match_parent"
+            android:layout_height="29dip"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/car_tab_left_selector"
+            android:text="品牌选择"
+            android:textColor="@color/car_tab_selector"
+            android:textSize="13dip" />
+
+        <Button
+            android:id="@+id/brand_hot_but"
+            android:layout_width="match_parent"
+            android:layout_height="29dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/car_tab_right_selector"
+            android:text="热门车型"
+            android:textColor="@color/car_tab_selector"
+            android:textSize="13dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/news_add_title_bg"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/custom_caption_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="72dp"
+        android:textColor="@color/global_lv_primary_text"
+        android:textSize="17.33sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/custom_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:textColor="@color/global_lv_primary_text"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/custom_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="17dp"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/custom_desc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="19dp"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/custom_copy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_gift_code"
+            android:textColor="@color/global_lv_primary_text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/custom_copy_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/global_lv_secondary_text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/custom_copy_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="@string/sign_copy"
+            android:textColor="@color/main_menu_text"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

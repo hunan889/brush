@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="5dp" 
+    android:background="@color/list_bg">
+
+    <RelativeLayout
+        android:id="@+id/first_tag_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:id="@+id/iv_first_tag_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/article_list_item_loading"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/article_list_item_loading"
+            gamenews:adjustType="auto_adjust_scale_height"
+            gamenews:scaleRate="1.261" />
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/article_list_item_transparent_selector"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            gamenews:adjustType="auto_adjust_scale_height"
+            gamenews:scaleRate="1.261" />
+
+        <TextView
+            android:id="@+id/tv_first_tag_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/hot_cart_txt_bg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/global_white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/second_tag_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/article_list_item_transparent_selector" >
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:id="@+id/iv_second_tag_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/article_list_item_loading"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/article_list_item_loading"
+            gamenews:adjustType="auto_adjust_scale_height"
+            gamenews:scaleRate="1.261" />
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/article_list_item_transparent_selector"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            gamenews:adjustType="auto_adjust_scale_height"
+            gamenews:scaleRate="1.261" />
+
+        <TextView
+            android:id="@+id/tv_second_tag_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/hot_cart_txt_bg"
+            android:gravity="center"
+            android:textColor="@color/global_white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

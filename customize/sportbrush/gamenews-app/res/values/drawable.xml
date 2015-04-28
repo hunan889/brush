@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="welcome_background">@drawable/welcome_bg</drawable>
+</resources>

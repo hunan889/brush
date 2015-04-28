@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_hot_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/HomeListPrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/header_hot"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="@string/hot_channel"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/actionbar_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_channels_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginBottom="10dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hot_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/HomeListPrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/header_hot"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="@string/hot_news"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:background="@color/actionbar_bg" />
+    </LinearLayout>
+
+</LinearLayout>

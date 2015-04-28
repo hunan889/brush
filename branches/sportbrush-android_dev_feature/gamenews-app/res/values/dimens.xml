@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 欢迎界面 -->
+    <dimen name="welcome_logo_height">157dp</dimen>
+    <dimen name="welcome_logo_width">228dp</dimen>
+    <dimen name="welcome_name_height">21dp</dimen>
+    <dimen name="welcome_name_width">98dp</dimen>
+    <dimen name="game_welcome_bottom_to_up_txt_height">150dp</dimen>
+    <!-- home -->
+    <dimen name="home_font_list_primary">18sp</dimen>
+    <dimen name="home_font_list_secondary">12sp</dimen>
+    <dimen name="home_list_corner_width">28dp</dimen>
+    <dimen name="home_list_corner_height">28dp</dimen>
+    <dimen name="home_list_img_width">92dp</dimen>
+    <dimen name="home_list_img_height">65dp</dimen>
+    <dimen name="home_list_height_h">95dp</dimen>
+    <dimen name="home_my_favor_padding_bottom">5.33dp</dimen>
+    <dimen name="my_favor_news_title_margin">11.33dp</dimen>
+
+    <!-- Action bar -->
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="actionbar_padding">10.66dp</dimen>
+    <dimen name="actionbar_img_height">34.66dp</dimen>
+    <dimen name="actionbar_img_width">34.66dp</dimen>
+
+    <!-- 频道仓库 -->
+    <dimen name="gridview_item_width">56dp</dimen>
+    <dimen name="gridview_img_width">48dp</dimen>
+    <dimen name="gridview_img_height">48dp</dimen>
+    <dimen name="column_item_margin">16dp</dimen>
+    <dimen name="column_item_width">87dp</dimen>
+    <dimen name="column_item_height">60dp</dimen>
+    <dimen name="channel_depot_grid_item_right">5dp</dimen>
+    <dimen name="channel_depot_grid_item_top">5dp</dimen>
+    <dimen name="channel_depot_column_item_width">90dip</dimen>
+    <dimen name="channel_depot_column_item_height">62.8dip</dimen>
+    <dimen name="channel_depot_margin_window">15dp</dimen>
+
+    <!-- 个人中心 -->
+    <dimen name="my_setting_primary_text">16dp</dimen>
+    <dimen name="my_setting_secondary_text">12dp</dimen>
+    <dimen name="my_margin_top">45.33dp</dimen>
+    <dimen name="my_head_btn_height">80dp</dimen>
+    <dimen name="my_head_btn_width">80dp</dimen>
+    <dimen name="my_login_btn_height">66.66dp</dimen>
+    <dimen name="my_login_btn_width">66.66dp</dimen>
+    <dimen name="my_head_btn_padding_bottom">13.33dp</dimen>
+    <dimen name="my_list_item_height">44dp</dimen>
+    <dimen name="my_list_item_padding_left">10.66dp</dimen>
+    <dimen name="my_list_item_padding_right">6.66dp</dimen>
+    <dimen name="image_settings_margin_right">4dp</dimen>
+
+    <!-- 精彩赛事 -->
+    <dimen name="wondlerful_race_title_size">15sp</dimen>
+    <dimen name="wondlerful_race_bottom_height">5dp</dimen>
+    <dimen name="wondlerful_race_height">30dp</dimen>
+    <dimen name="wondlerful_race_union_flag_margin_left">15dp</dimen>
+    <dimen name="wondlerful_race_margin_top">0dp</dimen>
+    <dimen name="wondlerful_race_margin_bottom">10dp</dimen>
+
+    <!-- 通用 -->
+    <!-- list view左右padding -->
+    <dimen name="global_list_padding_h">18dp</dimen>
+    <!-- list view上下padding -->
+    <dimen name="global_list_padding_top">15dp</dimen>
+    <dimen name="global_list_padding_bottom">15dp</dimen>
+    <dimen name="global_divider_height">1dp</dimen>
+    <dimen name="global_margin_window">10dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="text_settings_title_size">17sp</dimen>
+    <dimen name="text_settings_info_size">14sp</dimen>
+
+</resources>

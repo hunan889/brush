@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:id="@+id/hot_cart_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+        android:id="@+id/hot_cart_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/hot_cart_bg"
+        android:contentDescription="@drawable/hot_cart_bg"
+        android:scaleType="fitXY"
+        android:src="@drawable/hot_cart_bg"
+        gamenews:adjustType="auto_adjust_scale_height"
+        gamenews:scaleRate="1.261" />
+
+    <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+        android:id="@+id/hot_cart_img_pressed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/hot_cart_pressed"
+        android:contentDescription="@drawable/hot_cart_pressed"
+        android:scaleType="fitXY"
+        android:src="@drawable/hot_cart_pressed"
+        android:visibility="gone"
+        gamenews:adjustType="auto_adjust_scale_height"
+        gamenews:scaleRate="1.261" />
+
+    <TextView
+        android:id="@+id/hot_cart_txt"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/hot_cart_txt_bg"
+        android:gravity="center"
+        android:text="奥迪A6"
+        android:textColor="#ffffffff"
+        android:textSize="12dip" />
+
+</RelativeLayout>

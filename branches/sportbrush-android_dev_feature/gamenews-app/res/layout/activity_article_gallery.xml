@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_black" >
+
+    <FrameLayout
+        android:id="@+id/data_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/pager_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.yy.android.gamenews.ui.view.ScrollBannerView
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <RelativeLayout
+                android:id="@+id/page_footer_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/global_black"
+                android:paddingTop="12dp" >
+
+                <TextView
+                    android:id="@+id/page_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/page_number"
+                    android:ellipsize="end"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@id/page_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:id="@+id/page_footer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/page_title"
+                    android:layout_marginTop="12dp" >
+                </FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.yy.android.gamenews.ui.view.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        gamenews:background="@color/global_black"
+        gamenews:drawableLeft="@drawable/actionbar_back_selector"
+        gamenews:drawableRight="@drawable/actionbar_more_selector" />
+
+</RelativeLayout>

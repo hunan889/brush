@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gamenews="http://schemas.android.com/apk/res/com.yy.android.sportbrush"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/wondlerful_race_margin_bottom"
+        android:layout_marginTop="@dimen/wondlerful_race_margin_top" >
+
+        <com.yy.android.gamenews.ui.view.AutoAdjustImageView
+            android:id="@+id/wondlerful_race_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/article_list_item_loading_big"
+            android:scaleType="fitXY"
+            gamenews:adjustType="auto_adjust_scale_height"
+            gamenews:scaleRate="3.2" />
+
+        <ImageView
+            android:id="@+id/wondlerful_race_union_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wondlerful_race_union_flag_margin_left"
+            android:background="@null"
+            android:src="@drawable/wondlerful_race_person_game" />
+
+        <TextView
+            android:id="@+id/wondlerful_race_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wondlerful_race_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/wondlerful_race_title_bg"
+            android:gravity="center"
+            android:text="最抢挑战赛"
+            android:textColor="@color/wondlerful_race_title_color"
+            android:textSize="@dimen/wondlerful_race_title_size" />
+    </RelativeLayout>
+
+</LinearLayout>

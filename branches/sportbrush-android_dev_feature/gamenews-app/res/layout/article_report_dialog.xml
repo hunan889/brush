@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/article_report_mask" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/actionbar_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/global_bg_dark"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/report_not_interested"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/article_report_not_interested"
+            android:textColor="@color/global_label_color"
+            android:textSize="16sp" />
+
+        <View
+            style="@style/global_divider"
+            android:layout_marginLeft="9.33dp"
+            android:layout_marginRight="9.33dp" />
+
+        <TextView
+            android:id="@+id/report_bad"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/article_report_bad"
+            android:textColor="@color/global_label_color"
+            android:textSize="16sp" />
+
+        <View
+            style="@style/global_divider"
+            android:layout_marginLeft="9.33dp"
+            android:layout_marginRight="9.33dp" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/global_cancel"
+            android:textColor="@color/global_label_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

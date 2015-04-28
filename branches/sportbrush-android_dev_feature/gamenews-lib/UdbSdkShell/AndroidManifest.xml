@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yy.udbsdk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk 
+        android:minSdkVersion="7"
+        android:targetSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:theme="@android:style/Theme.NoTitleBar" >
+       
+		<activity
+            android:name="com.yy.udbsdk.Login_Activity" 
+            android:label="登录" >
+        </activity>
+        <activity
+            android:name="com.yy.udbsdk.Reg_Activity"
+            android:label="注册新帐号" >
+        </activity>
+        <activity
+            android:name="com.yy.udbsdk.Pwd_Activity"
+            android:label="修改帐号密码" >
+        </activity>
+
+    </application>
+
+</manifest>

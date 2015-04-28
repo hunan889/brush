@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/union_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_marginBottom="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_top_ten_union"
+            android:layout_width="0dp"
+            android:layout_height="71dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:background="@drawable/union_tab_selector"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal|top"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/top10_union" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="@string/top_ten_union"
+                android:textColor="@color/actionbar_bg"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_other_union"
+            android:layout_width="0dp"
+            android:layout_height="71dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:background="@drawable/union_tab_selector"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal|top"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/other_union" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="@string/other_union"
+                android:textColor="@color/actionbar_bg"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

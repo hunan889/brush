@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FAFBFC"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/udbsdk_title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        
+        <EditText
+	        android:id="@+id/edit_phone"
+	        android:layout_marginTop="30sp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="phone"
+	        android:hint="@string/yyudb_txt_input_phone_number"
+	        android:background="@drawable/udbsdk_edittext"
+	        android:textSize="21sp"/>
+    
+    	<Button 
+    		android:id="@+id/bt_send_verify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/yyudb_bt_send_verify"
+            android:textColor="#FFFFFF"
+            android:textSize="21sp"
+            android:background="@drawable/udbsdk_entrance_btn_bg"/>
+        
+    	<LinearLayout
+    	    android:id="@+id/layout_reg_web_parent"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="20dp"
+    	    android:layout_gravity="right"
+    	    >
+    	    <TextView
+    	        android:id="@+id/txt_reg_web1"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="@string/yyudb_txt_reg_web1"
+    	        android:textColor="#666666" 
+    	        android:textSize="15sp"
+    	        />
+    	    <TextView
+    	        android:id="@+id/txt_reg_web2"
+    	        android:layout_height="wrap_content" 
+    	        android:layout_width="wrap_content"
+    	        android:text="@string/yyudb_txt_reg_web2"
+    	        android:textColor="#57B2E9"
+    	        android:textSize="15sp"
+    	        />
+    	</LinearLayout>
+		
+    </LinearLayout>
+</LinearLayout>
